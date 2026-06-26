@@ -15,7 +15,7 @@ export default defineConfig({
 
  
   reporter: [
-    ['html', { open: 'never' }],
+    ['html', { open: 'always' }],
     ['allure-playwright']
   ],
 

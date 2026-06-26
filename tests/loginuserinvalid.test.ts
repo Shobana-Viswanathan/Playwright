@@ -6,4 +6,5 @@ test('Invalid Login',async({page})=>{
    await page.locator('//input[@data-qa="login-password"]').fill('1234sho');
    await page.click('//button[@data-qa="login-button"]');
    await expect(page.locator('//p[text()="Your email or password is incorrect!"]')).toBeVisible();
-})
+   await page.close();
+})

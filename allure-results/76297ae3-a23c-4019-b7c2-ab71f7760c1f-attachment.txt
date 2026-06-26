@@ -1,0 +1,4 @@
+First number entered
+Second number entered
+Expected Sum: 30
+Displayed Sum: 30

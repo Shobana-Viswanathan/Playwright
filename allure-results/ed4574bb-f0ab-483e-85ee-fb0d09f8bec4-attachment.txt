@@ -1,0 +1,2 @@
+Promise { <pending> }
+getByPlaceholder('Please enter your Message')
