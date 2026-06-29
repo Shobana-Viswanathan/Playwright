@@ -1,0 +1,51 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: parameterize.test.ts >> Google search paramterized tests >> Search Flow - Playwright
+- Location: tests\parameterize.test.ts:8:9
+
+# Error details
+
+```
+Error: page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.google.com/", waiting until "load"
+
+```
+
+```
+Error: locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('h3').first()
+    - waiting for" https://www.google.com/search?q=Playwright&sca_esv=2ab59e100257b972&source=hp&ei=BB9CauTaJo6UseMPjdC4sAo&iflsig=ABILxe8AAAAAakItFBNxxErEEgwFg9Z3jMpUb_7SaQs6" navigation to finish...
+    - navigated to "https://www.google.com/search?q=Playwright&sca_esv=2ab59e100257b972&source=hp&ei=BB9CauTaJo6UseMPjdC4sAo&iflsig=ABILxe8AAAAAakItFBNxxErEEgwFg9Z3jMpUb_7SaQs6"
+
+```
+
+# Test source
+
+```ts
+  1  | import { test,expect } from '@playwright/test';
+  2  | import { exitCode } from 'node:process';
+  3  | const searchdata=[{keyword:"Playwright",expectedTitle:"Playwright"},
+  4  |     {keyword:"Selenium",expectedTitle:"Selenium"},
+  5  |     {keyword:"Cypress",expectedTitle:"Cypress"}];
+  6  | test.describe("Google search paramterized tests",()=>{
+  7  |     for(const data of searchdata){
+  8  |         test(`Search Flow - ${data.keyword}`,async({page})=>{
+  9  |         page.goto("https://www.google.com");
+  10 |         await page.locator("textarea[name='q']").fill(data.keyword);
+  11 |         await page.keyboard.press("Enter");
+  12 |         const firstresult=page.locator('h3').first();
+> 13 |         await firstresult.click();
+     |                           ^ Error: locator.click: Target page, context or browser has been closed
+  14 |         await expect(page).toHaveTitle(new RegExp(data.expectedTitle,"i"));
+  15 |         })
+  16 |     }
+  17 | })
+```
