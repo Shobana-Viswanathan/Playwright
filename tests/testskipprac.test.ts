@@ -9,10 +9,9 @@ test('Login test 1', async ({ page }) => {
     await page.fill('#loginpassword', "shobi11");
     await page.click('button[onclick="logIn()"]');
 
-    const welcometxt = await page.locator("#nameofuser").textContent();
-
-    await expect.soft(welcometxt).toBe('Welcome Shobs');
-
+    await expect.soft(page.getByRole("link",{name:'Log out'})).toBeVisible();
+    await expect.soft(page.getByRole("link",{name:'Log out'})).toHaveText("Log out");
+    expect.soft(page.locator("#nameofuser")).toHaveText("Welcome Shobs");
 });
 
 test("Login Test 2", async ({ page }) => {
@@ -26,12 +25,8 @@ test("Login Test 2", async ({ page }) => {
     await page.fill('#loginpassword', "shobi11");
     await page.click('button[onclick="logIn()"]');
 
-    await expect(
-        page.getByRole("link", { name: "Log out" })
-    ).toBeVisible();
-
-    const welcometxt = await page.locator("#nameofuser").textContent();
-
-    await expect(welcometxt).toBe('Welcome Shobs');
+    await expect.soft(page.getByRole("link",{name:'Log out'})).toBeVisible();
+    await expect.soft(page.getByRole("link",{name:'Log out'})).toHaveText("Log out");
+    expect.soft(page.locator("#nameofuser")).toHaveText("Welcome Shobs");
 
 });

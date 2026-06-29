@@ -5,8 +5,9 @@ test.only('Login test 1',async({page})=>{
     await page.fill('#loginusername',"Shobs");
     await page.fill('#loginpassword',"shobi11");
     await page.click('button[onclick="logIn()"]');
-    const welcometxt = page.locator("#nameofuser").textContent();
-    await expect.soft(welcometxt).toBe('Welcome Shobs');
+    await expect.soft(page.getByRole("link",{name:'Log out'})).toBeVisible();
+    await expect.soft(page.getByRole("link",{name:'Log out'})).toHaveText("Log out");
+    expect.soft(page.locator("#nameofuser")).toHaveText("Welcome Shobs");
     
 })
 test('Search',async({page})=>{
