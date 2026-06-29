@@ -1,5 +1,5 @@
 import { test,expect } from '@playwright/test';
-test('Confirm Alert',async({page})=>{
+test('Prompt Alert',async({page})=>{
     await page.goto("https://www.testmuai.com/selenium-playground/javascript-alert-box-demo/");
     page.on("dialog",async (alert)=>{
         const text=alert.defaultValue();
