@@ -1,4 +1,3 @@
-import {test,expect} from '../fixtures/basefixtures';
 import {Page,Locator} from '@playwright/test';
 export class LoginPage{
      readonly page:Page;
@@ -16,7 +15,7 @@ export class LoginPage{
         this.userloggedname=page.locator('#nameofuser');
     }
     async navigate(){
-        await this.page.goto("https://www.demoblaze.com/");
+        await this.page.goto(process.env.base_url!);
     }
     async login(username:string,password:string){
 

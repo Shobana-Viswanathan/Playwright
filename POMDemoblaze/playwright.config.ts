@@ -11,6 +11,13 @@ import { defineConfig, devices } from '@playwright/test';
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
+import dotenv from 'dotenv';
+ const envName=process.env.ENV || 'qa';
+
+//Load env file
+dotenv.config({
+    path: `./env/.env.${envName}`
+});
 export default defineConfig({
   testDir: './tests',
   /* Run tests in files in parallel */

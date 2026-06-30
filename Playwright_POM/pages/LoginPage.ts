@@ -16,7 +16,7 @@ export class LoginPage{
         this.errorMessage=page.locator('.oxd-alert-content-text');
     }
     async navigate(){
-        await this.page.goto("https://opensource-demo.orangehrmlive.com/");
+        await this.page.goto(process.env.base_url!);
         {
             waitUntil:'domcontentloaded'
         }
