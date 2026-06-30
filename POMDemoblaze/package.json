@@ -1,5 +1,5 @@
 {
-  "name": "playwright_pom",
+  "name": "pomdemoblaze",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,8 +12,5 @@
     "@playwright/test": "^1.61.1",
     "@types/node": "^26.0.1",
     "allure-playwright": "^3.10.2"
-  },
-  "dependencies": {
-    "csv-parse": "^7.0.0"
   }
 }

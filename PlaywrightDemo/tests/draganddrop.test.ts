@@ -8,7 +8,7 @@ test('Drag and Drop', async ({ page }) => {
     const target = page.locator("#droppable");
 
     await source.dragTo(target);
-
     await expect(target).toContainText("Dropped!");
+
 
 });

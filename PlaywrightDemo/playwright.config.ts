@@ -15,7 +15,7 @@ export default defineConfig({
   //testMatch:["tests/testonlyprac.test.ts"],
    //repeatEach:3,
    //retries:2,
-   timeout:6000,
+   //timeout:6000,
   // Parallel Execution
   //fullyParallel: true,
 
