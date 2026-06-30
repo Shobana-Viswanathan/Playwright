@@ -1,4 +1,0 @@
-First number entered
-Second number entered
-Sum: 20
-Console result

@@ -1,2 +1,0 @@
-First number entered
-Second number entered

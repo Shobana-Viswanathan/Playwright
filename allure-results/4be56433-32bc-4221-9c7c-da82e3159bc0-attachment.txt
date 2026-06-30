@@ -1,6 +1,0 @@
-Number of Pages: 3
-URL: https://demoqa.com/browser-windows
-URL: https://demoqa.com/sample
-Sample Page Heading: This is a sample page
-URL: https://demoqa.com/sample
-Sample Page Heading: This is a sample page

@@ -1,4 +1,0 @@
-Selenium Grid Online | Run Selenium Test On Cloud
-Promise { <pending> }
-Before Value:Please enter your Message
-After value:Shobi

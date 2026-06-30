@@ -1,3 +1,0 @@
-First window url https://demoqa.com/browser-windows
-New Window url: https://demoqa.com/sample
-Heading:  This is a sample page

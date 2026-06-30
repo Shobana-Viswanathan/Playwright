@@ -1,2 +1,0 @@
-Promise { <pending> }
-locator('//input[@id=\'user-message\']').getByText('Please enter your Message')

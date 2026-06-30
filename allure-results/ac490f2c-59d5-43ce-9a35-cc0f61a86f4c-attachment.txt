@@ -1,3 +1,0 @@
-Selenium Grid Online | Run Selenium Test On Cloud
-Before value: locator('//input[@id=\'user-message\']').getByText('Please enter your Message')
-After value: getByText('Shobi')

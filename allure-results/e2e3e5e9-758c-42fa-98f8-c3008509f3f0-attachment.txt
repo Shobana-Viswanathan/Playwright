@@ -1,3 +1,0 @@
-Selenium Grid Online | Run Selenium Test On Cloud
-Please enter your Message
-After value: getByText('Shobi')
