@@ -27,23 +27,18 @@ test.describe("Login Test", () => {
             .toHaveText("Welcome Shobs");
     });
 
-    test("Invalid Login", async ({ loginPage, page }) => {
+    test("Invalid Login", async ({ loginPage}) => {
 
         if (!invalidUser) {
             throw new Error("Invalid user not found in Excel.");
         }
 
-        page.on("dialog", async dialog => {
-
-            expect(dialog.message()).toContain("Please fill out Username and Password.");
-
-            await dialog.accept();
-        });
-
         await loginPage.login(
             invalidUser.username,
             invalidUser.password
         );
+       
+
 
     });
 

@@ -12,4 +12,8 @@ test.describe('Login Test',()=>{
         )
         await expect (loginPage.userloggedname).toHaveText('Welcome Shobs');
     })
+    test.afterEach(async({loginPage})=>{
+        await loginPage.logout();
+        await expect (loginPage.clicklogin).toBeVisible();
+    })
 })

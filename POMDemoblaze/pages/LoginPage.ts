@@ -6,6 +6,7 @@ export class LoginPage{
     readonly password:Locator;
     readonly loginbutton:Locator;
     readonly userloggedname:Locator;
+    readonly logoutclick:Locator;
     constructor(page:Page){
         this.page=page;
         this.clicklogin=page.locator('#login2');
@@ -13,6 +14,7 @@ export class LoginPage{
         this.password=page.locator('#loginpassword');
         this.loginbutton=page.locator('//button[@onclick="logIn()"]');
         this.userloggedname=page.locator('#nameofuser');
+        this.logoutclick=page.locator('//a[@onclick="logOut()"]');
     }
     async navigate(){
         await this.page.goto(process.env.base_url!);
@@ -22,8 +24,15 @@ export class LoginPage{
         await this.clicklogin.click();
         await this.username.fill(username);
         await this.password.fill(password);
+        this.page.on("dialog", async (alert) => {
+             console.log(alert.message());
+        
+                    await alert.accept();
+                });
         await this.loginbutton.click();
     }
-
+    async logout(){
+        await this.logoutclick.click();
+    }
 
 }
