@@ -1,0 +1,33 @@
+import {test,expect} from '../fixtures/baseFixtures';
+import { readLoginData,LoginUser } from '../utils/csvReader';
+const users:LoginUser[]=readLoginData();
+const validUser=users.find(user=>user.type === "valid");
+const invalidUser = users.find(user=>user.type === "invalid")
+test.describe('Login Test @Regression',()=>{
+    test('Valid Login',async({homePage,loginPage})=>{
+        if(!validUser){
+            throw new Error ("Valid user data not found");
+        }
+        await homePage.navigate();
+        await homePage.login();
+        await loginPage.login(
+            validUser.username,
+            validUser.password
+
+        );
+        
+    })
+    test('Invalid Login',async({homePage,loginPage})=>{
+        if(!invalidUser){
+            throw new Error ("Valid user data not found");
+        }
+        await homePage.navigate();
+        await homePage.login();
+        await loginPage.login(
+            invalidUser.username,
+            invalidUser.password
+
+        );
+        await expect (loginPage.errmsg).toHaveText('Warning: No match for E-Mail Address and/or Password.');
+    })
+})

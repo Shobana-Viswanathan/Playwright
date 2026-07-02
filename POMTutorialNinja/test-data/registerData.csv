@@ -1,0 +1,2 @@
+type,fname,lname,email,tele,password,passconfirm
+register,shob,s,sho@gmail.com,9876543210,123456,123456
