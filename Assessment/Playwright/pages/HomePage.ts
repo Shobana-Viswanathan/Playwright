@@ -17,7 +17,7 @@ export class HomePage{
     }
 
     async navigate(){
-        await this.page.goto('https://tutorialsninja.com/demo/',{
+        await this.page.goto(process.env.base_url !,{
             waitUntil:'domcontentloaded'
         });
     }
