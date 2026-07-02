@@ -1,4 +1,5 @@
-import * as report from "multiple-cucumber-html-reporter";
+const report = require("multiple-cucumber-html-reporter");
+
 report.generate({
   jsonDir: "reports",
   reportPath: "./reports",
@@ -8,17 +9,20 @@ report.generate({
   metadata: {
     browser: {
       name: "chrome",
-      version: "118",
+      version: "118"
     },
-device: "Shobana - Machine",
+    device: "Shobana - Machine",
     platform: {
       name: "Windows",
-      version: "10",
-    },
+      version: "10"
+    }
   },
   customData: {
     title: "Test info",
     data: [
       { label: "Project", value: "Book Cart Project" },
       { label: "Release", value: "1.2.3" },
-      { label: "Cycle", value: "Smoke-1" },      ],    },  });
+      { label: "Cycle", value: "Smoke-1" }
+    ]
+  }
+});
