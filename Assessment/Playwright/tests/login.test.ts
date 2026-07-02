@@ -21,12 +21,23 @@ test.describe('Login Test @Regression',()=>{
         await expect (loginPage.loginmsg).toBeVisible();
         
     })
-    test('Invalid Login',async({homePage,loginPage})=>{
+    test('Invalid Email Login',async({loginPage})=>{
         if(!invalidUser){
-            throw new Error ("Valid user data not found");
+            throw new Error ("InValid user data not found");
         }
-        await homePage.navigate();
-        await homePage.login();
+    
+        await loginPage.login(
+            invalidUser.username,
+            invalidUser.password
+
+        );
+        await expect (loginPage.errmsg).toHaveText('Warning: No match for E-Mail Address and/or Password.');
+    })
+    test('Invalid Password Login',async({loginPage})=>{
+        if(!invalidUser){
+            throw new Error ("InValid user data not found");
+        }
+       
         await loginPage.login(
             invalidUser.username,
             invalidUser.password

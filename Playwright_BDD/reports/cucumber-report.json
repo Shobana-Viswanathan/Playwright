@@ -1,0 +1,197 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-in-orange-hrm;valid-login-into-orange-hrm-application",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Valid Login into orange hrm application",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1414156500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User should navigate to the Orange HRM",
+            "match": {
+              "location": "src\\test\\steps\\loginhrm.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4224136599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "User have to enter the user name in the input field",
+            "match": {
+              "location": "src\\test\\steps\\loginhrm.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 932240499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User have to enter the password in the input field",
+            "match": {
+              "location": "src\\test\\steps\\loginhrm.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26924800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "User have to click the login button in the orange hrm application",
+            "match": {
+              "location": "src\\test\\steps\\loginhrm.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1905847200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "User should be logged success in the application",
+            "match": {
+              "location": "src\\test\\steps\\loginhrm.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 918899999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 515224399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-in-orange-hrm;invalid-login-into-the-orange-hrm-application",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Invalid Login into the orange hrm application",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 822392400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User should navigate to the Orange HRM",
+            "match": {
+              "location": "src\\test\\steps\\loginhrm.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4885862600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "User have to enter the user name in the input field",
+            "match": {
+              "location": "src\\test\\steps\\loginhrm.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 543966199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "User have to enter the invalid password in the input field",
+            "match": {
+              "location": "src\\test\\steps\\loginhrm.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27170799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "User have to click the login button in the orange hrm application",
+            "match": {
+              "location": "src\\test\\steps\\loginhrm.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 193688599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "User should not get successfull login",
+            "match": {
+              "location": "src\\test\\steps\\loginhrm.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2060548300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 581982499
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-in-orange-hrm",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login in Orange Hrm",
+    "tags": [],
+    "uri": "src\\test\\features\\loginohrm.feature"
+  }
+]

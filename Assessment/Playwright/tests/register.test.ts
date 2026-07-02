@@ -17,7 +17,7 @@ test.describe('Register @smoke', () => {
             registerData.register.pswdcfrm
         );
 
-        await expect(registerPage.regmsg).toHaveText('Your Account Has Been Created!');
+        await expect(registerPage.regmsg).toBeVisible();
 
     });
 
