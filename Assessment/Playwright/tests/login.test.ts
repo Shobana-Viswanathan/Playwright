@@ -4,17 +4,21 @@ const users:LoginUser[]=readLoginData();
 const validUser=users.find(user=>user.type === "valid");
 const invalidUser = users.find(user=>user.type === "invalid")
 test.describe('Login Test @Regression',()=>{
-    test('Valid Login',async({homePage,loginPage})=>{
+    test.beforeEach(async({homePage})=>{
+        await homePage.navigate();
+        await homePage.login();
+    })
+    test('Valid Login',async({loginPage})=>{
         if(!validUser){
             throw new Error ("Valid user data not found");
         }
-        await homePage.navigate();
-        await homePage.login();
+        
         await loginPage.login(
             validUser.username,
             validUser.password
 
         );
+        await expect (loginPage.loginmsg).toBeVisible();
         
     })
     test('Invalid Login',async({homePage,loginPage})=>{
