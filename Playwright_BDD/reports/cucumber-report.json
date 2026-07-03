@@ -4,6 +4,238 @@
     "elements": [
       {
         "description": "",
+        "id": "user-authentication-tests;login-should-be-success",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Login should be success",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 513230300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigates to the application",
+            "match": {
+              "location": "src\\test\\steps\\loginsteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2630924199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "User click on the login link of application",
+            "match": {
+              "location": "src\\test\\steps\\loginsteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 116005500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User enters the username as \"Shar\"",
+            "match": {
+              "location": "src\\test\\steps\\loginsteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 225991399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User enters the password as \"Shar123!\"",
+            "match": {
+              "location": "src\\test\\steps\\loginsteps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26605499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "User click on the login button in the application",
+            "match": {
+              "location": "src\\test\\steps\\loginsteps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 100980099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "Login should be success",
+            "match": {
+              "location": "src\\test\\steps\\loginsteps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 229308100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 333349399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-authentication-tests",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "User Authentication tests",
+    "tags": [],
+    "uri": "src\\test\\features\\login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "verify-login;login-to-the-demoblaze-application",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Login to the demoblaze application",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 476052999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "User should navigate to the application of demoblaze",
+            "match": {
+              "location": "src\\test\\steps\\logindemoblazesteps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2655110000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 4,
+            "name": "User have to click the login button in homepage",
+            "match": {
+              "location": "src\\test\\steps\\logindemoblazesteps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 128924199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "User have to enter the username in input field",
+            "match": {
+              "location": "src\\test\\steps\\logindemoblazesteps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 156915399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User have to enter the password in input field",
+            "match": {
+              "location": "src\\test\\steps\\logindemoblazesteps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23632400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "User have to click the login button after entering details",
+            "match": {
+              "location": "src\\test\\steps\\logindemoblazesteps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 437488900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "User should see the success login",
+            "match": {
+              "location": "src\\test\\steps\\logindemoblazesteps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3109092300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 347593899
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "verify-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Verify Login",
+    "tags": [],
+    "uri": "src\\test\\features\\logindemoblaze.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
         "id": "login-in-orange-hrm;valid-login-into-orange-hrm-application",
         "keyword": "Scenario",
         "line": 5,
@@ -14,7 +246,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1414156500
+              "duration": 482415399
             }
           },
           {
@@ -27,7 +259,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4224136599
+              "duration": 3661945599
             }
           },
           {
@@ -40,7 +272,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 932240499
+              "duration": 878747899
             }
           },
           {
@@ -53,7 +285,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 26924800
+              "duration": 17110000
             }
           },
           {
@@ -66,7 +298,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1905847200
+              "duration": 1195062300
             }
           },
           {
@@ -79,7 +311,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 918899999
+              "duration": 893713700
             }
           },
           {
@@ -87,7 +319,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 515224399
+              "duration": 317329300
             }
           }
         ],
@@ -106,7 +338,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 822392400
+              "duration": 536564500
             }
           },
           {
@@ -119,7 +351,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4885862600
+              "duration": 4944022699
             }
           },
           {
@@ -132,7 +364,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 543966199
+              "duration": 875547800
             }
           },
           {
@@ -145,7 +377,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 27170799
+              "duration": 13301299
             }
           },
           {
@@ -158,7 +390,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 193688599
+              "duration": 46131299
             }
           },
           {
@@ -171,7 +403,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2060548300
+              "duration": 4079390199
             }
           },
           {
@@ -179,7 +411,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 581982499
+              "duration": 313656300
             }
           }
         ],
@@ -193,5 +425,433 @@
     "name": "Login in Orange Hrm",
     "tags": [],
     "uri": "src\\test\\features\\loginohrm.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-authentication-tests;login-should-be-success",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Login should be success",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 483102899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigates to the tutorial ninja application",
+            "match": {
+              "location": "src\\test\\steps\\logintutorialsteps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2760635600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "User click the Account menu",
+            "match": {
+              "location": "src\\test\\steps\\logintutorialsteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 101623200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "User click on the login link",
+            "match": {
+              "location": "src\\test\\steps\\logintutorialsteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 338020500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "User enter the email as \"sham@gmail.com\"",
+            "match": {
+              "location": "src\\test\\steps\\logintutorialsteps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45358799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "User enter the password as \"1234\"",
+            "match": {
+              "location": "src\\test\\steps\\logintutorialsteps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14616199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "User click on the login button",
+            "match": {
+              "location": "src\\test\\steps\\logintutorialsteps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1522413800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "My Account should be displayed",
+            "match": {
+              "location": "src\\test\\steps\\logintutorialsteps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47428299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 447119099
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-authentication-tests;login-should-not-be-success",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Login should not be success",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 482111199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigates to the tutorial ninja application",
+            "match": {
+              "location": "src\\test\\steps\\logintutorialsteps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2790607299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "User click the Account menu",
+            "match": {
+              "location": "src\\test\\steps\\logintutorialsteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 101388299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "User click on the login link",
+            "match": {
+              "location": "src\\test\\steps\\logintutorialsteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 253596000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "User enter the email as \"sham@gmail.com\"",
+            "match": {
+              "location": "src\\test\\steps\\logintutorialsteps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50856500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "User enter the empty password as \"\"",
+            "match": {
+              "location": "src\\test\\steps\\logintutorialsteps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15578800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "User click on the login button",
+            "match": {
+              "location": "src\\test\\steps\\logintutorialsteps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1040895299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "Login should be unsuccessful",
+            "match": {
+              "location": "src\\test\\steps\\logintutorialsteps.ts:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31792900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 359479999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-authentication-tests",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "User Authentication tests",
+    "tags": [],
+    "uri": "src\\test\\features\\logintutorial.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "register-tests;user-register-to-application",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "User register to application",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 473606599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "User should navigate to the application",
+            "match": {
+              "location": "src\\test\\steps\\registertutorial.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2705244299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 4,
+            "name": "User have to click the Register",
+            "match": {
+              "location": "src\\test\\steps\\registertutorial.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 646836499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "User have to enter the firstname",
+            "match": {
+              "location": "src\\test\\steps\\registertutorial.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 124947399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User have to enter the lastname",
+            "match": {
+              "location": "src\\test\\steps\\registertutorial.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24535199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User have to enter the email address",
+            "match": {
+              "location": "src\\test\\steps\\registertutorial.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21321199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "User have to enter the phone number",
+            "match": {
+              "location": "src\\test\\steps\\registertutorial.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24055099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "User have to enter the password",
+            "match": {
+              "location": "src\\test\\steps\\registertutorial.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16778900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "User have to enter the confirm password",
+            "match": {
+              "location": "src\\test\\steps\\registertutorial.ts:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14330800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "User have to click agree button",
+            "match": {
+              "location": "src\\test\\steps\\registertutorial.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65004700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "User click the continue button",
+            "match": {
+              "location": "src\\test\\steps\\registertutorial.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 923494600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "User should see the successfull register",
+            "match": {
+              "location": "src\\test\\steps\\registertutorial.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42297800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 325934000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "register-tests",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Register tests",
+    "tags": [],
+    "uri": "src\\test\\features\\registertutorial.feature"
   }
 ]

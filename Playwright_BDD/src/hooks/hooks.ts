@@ -20,6 +20,6 @@ After(async function (this:CustomWorld,{pickle,result}) {
         await this.attach(img,"image/png");
     }
     await this.page.close();
-    await this.browser.close();
     await this.context.close();
+    await this.browser.close();
 })
