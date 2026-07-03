@@ -24,7 +24,7 @@ Given('User have to enter the lastname', async function (this:CustomWorld) {
 });
 
 Given('User have to enter the email address', async function (this:CustomWorld) {
-  await this.page.locator('#input-email').fill("shobns@gmail.com");
+  await this.page.locator('#input-email').fill("shobans@gmail.com");
 });
 Given('User have to enter the phone number', async function (this:CustomWorld) {
    await this.page.locator('#input-telephone').fill("9876543221");
