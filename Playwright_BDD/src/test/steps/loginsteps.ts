@@ -11,12 +11,12 @@ Given('User click on the login link of application', async function (this:Custom
   await this.page.locator("//span[normalize-space()='Login']").click();
 });
 
-Given('User enters the username as {string}', async function (this:CustomWorld) {
-  await this.page.locator("//input[@id='mat-input-0']").fill("Shar");
+Given('User enters the username as {string}', async function (this:CustomWorld,username:string) {
+  await this.page.locator("//input[@id='mat-input-0']").fill(username);
 });
 
-Given('User enters the password as {string}', async function (this:CustomWorld,string) {
-  await this.page.locator("//input[@id='mat-input-1']").fill("Shar123!");  
+Given('User enters the password as {string}', async function (this:CustomWorld,password:string) {
+  await this.page.locator("//input[@id='mat-input-1']").fill(password);  
 });
 
 When('User click on the login button in the application', async function (this:CustomWorld) {
