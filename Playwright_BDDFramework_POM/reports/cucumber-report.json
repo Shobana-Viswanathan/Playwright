@@ -1,0 +1,225 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "verify-login;valid-login-to-the-application",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Valid login to the application",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 340044600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User should navigate to tutorial ninja application",
+            "match": {
+              "location": "src\\test\\steps\\loginsteps.ts:6"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5282500,
+              "error_message": "page.goto: url: expected string, got undefined\n    at LoginPage.navigate (C:\\Users\\Hp\\OneDrive\\Desktop\\Playwright\\Playwright_BDDFramework_POM\\src\\test\\pages\\BasePage.ts:8:25)\n    at CustomWorld.<anonymous> (C:\\Users\\Hp\\OneDrive\\Desktop\\Playwright\\Playwright_BDDFramework_POM\\src\\test\\steps\\loginsteps.ts:7:24)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "User have to select the login",
+            "match": {
+              "location": "src\\test\\steps\\loginsteps.ts:9"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User have to enter the email address",
+            "match": {
+              "location": "src\\test\\steps\\loginsteps.ts:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User have to enter the password",
+            "match": {
+              "location": "src\\test\\steps\\loginsteps.ts:17"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "src\\test\\steps\\loginsteps.ts:21"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "User should have successfull login",
+            "match": {
+              "location": "src\\test\\steps\\loginsteps.ts:25"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 552945499
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "verify-login;invalid-login-to-the-application",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Invalid login to the application",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 362868400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User should navigate to tutorial ninja application",
+            "match": {
+              "location": "src\\test\\steps\\loginsteps.ts:6"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 6034899,
+              "error_message": "page.goto: url: expected string, got undefined\n    at LoginPage.navigate (C:\\Users\\Hp\\OneDrive\\Desktop\\Playwright\\Playwright_BDDFramework_POM\\src\\test\\pages\\BasePage.ts:8:25)\n    at CustomWorld.<anonymous> (C:\\Users\\Hp\\OneDrive\\Desktop\\Playwright\\Playwright_BDDFramework_POM\\src\\test\\steps\\loginsteps.ts:7:24)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "User have to select the login",
+            "match": {
+              "location": "src\\test\\steps\\loginsteps.ts:9"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "User have to enter the email address",
+            "match": {
+              "location": "src\\test\\steps\\loginsteps.ts:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "User have to enter the invalid password",
+            "match": {
+              "location": "src\\test\\steps\\loginsteps.ts:29"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "src\\test\\steps\\loginsteps.ts:21"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "User should not have successfull login",
+            "match": {
+              "location": "src\\test\\steps\\loginsteps.ts:33"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 163293799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "verify-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Verify Login",
+    "tags": [],
+    "uri": "src\\test\\features\\login.feature"
+  }
+]

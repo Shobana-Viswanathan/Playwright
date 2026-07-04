@@ -1,0 +1,11 @@
+[2026-07-03T11:40:42.709Z] INFO-Browser Launched
+[2026-07-03T11:40:47.439Z] ERROR-Scenario Failed: Valid login to the application
+[2026-07-03T11:40:47.440Z] ERROR-Screenshot Saved:reports/screenshots/1783078847330.png
+[2026-07-03T11:40:51.786Z] INFO-Scenario Passed:Invalid login to the application
+[2026-07-03T11:40:51.877Z] INFO-Browser Closed
+[2026-07-03T11:45:32.580Z] INFO-Browser Launched
+[2026-07-03T11:45:33.569Z] ERROR-Scenario Failed: Valid login to the application
+[2026-07-03T11:45:33.570Z] ERROR-Screenshot Saved:reports/screenshots/1783079133109.png
+[2026-07-03T11:45:34.170Z] ERROR-Scenario Failed: Invalid login to the application
+[2026-07-03T11:45:34.170Z] ERROR-Screenshot Saved:reports/screenshots/1783079134070.png
+[2026-07-03T11:45:34.242Z] INFO-Browser Closed
