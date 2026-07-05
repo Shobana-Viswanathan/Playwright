@@ -1,4 +1,4 @@
-import {Before,After,BeforeAll,AfterAll,Status} from '@cucumber/cucumber';
+import {Before,After,BeforeAll,AfterAll,Status,setDefaultTimeout} from '@cucumber/cucumber';
 import {Browser, chromium} from "@playwright/test";
 import { CustomWorld } from '../world/CustomWorld';
 import {LoginPage} from '../pages/LoginPage';
@@ -6,10 +6,13 @@ import { RegisterPage } from '../pages/RegisterPage';
 import {logger} from '../utils/winstonlogger';
 import { SearchPage } from '../pages/searchPage';
 
+setDefaultTimeout(60 * 1000);
 let browser:Browser;
 BeforeAll(async()=>{
     
-    browser=await chromium.launch({headless:false});
+   browser = await chromium.launch({
+    headless: true
+  });
     logger.info("Browser Launched");
 });
 Before(async function (this:CustomWorld,scenario) {
