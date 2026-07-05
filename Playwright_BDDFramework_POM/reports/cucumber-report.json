@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 340044600
+              "duration": 359274199
             }
           },
           {
@@ -26,9 +26,8 @@
               "location": "src\\test\\steps\\loginsteps.ts:6"
             },
             "result": {
-              "status": "failed",
-              "duration": 5282500,
-              "error_message": "page.goto: url: expected string, got undefined\n    at LoginPage.navigate (C:\\Users\\Hp\\OneDrive\\Desktop\\Playwright\\Playwright_BDDFramework_POM\\src\\test\\pages\\BasePage.ts:8:25)\n    at CustomWorld.<anonymous> (C:\\Users\\Hp\\OneDrive\\Desktop\\Playwright\\Playwright_BDDFramework_POM\\src\\test\\steps\\loginsteps.ts:7:24)"
+              "status": "passed",
+              "duration": 1229962399
             }
           },
           {
@@ -40,8 +39,8 @@
               "location": "src\\test\\steps\\loginsteps.ts:9"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 736601399
             }
           },
           {
@@ -53,8 +52,8 @@
               "location": "src\\test\\steps\\loginsteps.ts:13"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 105802300
             }
           },
           {
@@ -66,8 +65,8 @@
               "location": "src\\test\\steps\\loginsteps.ts:17"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 40322799
             }
           },
           {
@@ -79,8 +78,8 @@
               "location": "src\\test\\steps\\loginsteps.ts:21"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 909366200
             }
           },
           {
@@ -92,8 +91,8 @@
               "location": "src\\test\\steps\\loginsteps.ts:25"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 73601300
             }
           },
           {
@@ -101,7 +100,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 552945499
+              "duration": 90202399
             }
           }
         ],
@@ -120,7 +119,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 362868400
+              "duration": 308476399
             }
           },
           {
@@ -132,9 +131,8 @@
               "location": "src\\test\\steps\\loginsteps.ts:6"
             },
             "result": {
-              "status": "failed",
-              "duration": 6034899,
-              "error_message": "page.goto: url: expected string, got undefined\n    at LoginPage.navigate (C:\\Users\\Hp\\OneDrive\\Desktop\\Playwright\\Playwright_BDDFramework_POM\\src\\test\\pages\\BasePage.ts:8:25)\n    at CustomWorld.<anonymous> (C:\\Users\\Hp\\OneDrive\\Desktop\\Playwright\\Playwright_BDDFramework_POM\\src\\test\\steps\\loginsteps.ts:7:24)"
+              "status": "passed",
+              "duration": 1272297199
             }
           },
           {
@@ -146,8 +144,8 @@
               "location": "src\\test\\steps\\loginsteps.ts:9"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 518575700
             }
           },
           {
@@ -159,8 +157,8 @@
               "location": "src\\test\\steps\\loginsteps.ts:13"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 94304500
             }
           },
           {
@@ -172,8 +170,8 @@
               "location": "src\\test\\steps\\loginsteps.ts:29"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 38555699
             }
           },
           {
@@ -185,8 +183,8 @@
               "location": "src\\test\\steps\\loginsteps.ts:21"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1495003199
             }
           },
           {
@@ -198,8 +196,8 @@
               "location": "src\\test\\steps\\loginsteps.ts:33"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 45937500
             }
           },
           {
@@ -207,7 +205,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 163293799
+              "duration": 84175500
             }
           }
         ],
@@ -221,5 +219,186 @@
     "name": "Verify Login",
     "tags": [],
     "uri": "src\\test\\features\\login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "register;user-register-to-application",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "User register to application",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 321161099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "User should navigate to the application",
+            "match": {
+              "location": "src\\test\\steps\\registersteps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1379673699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 4,
+            "name": "User have to click the Register",
+            "match": {
+              "location": "src\\test\\steps\\registersteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 450053099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "User have to enter the firstname",
+            "match": {
+              "location": "src\\test\\steps\\registersteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 245478299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User have to enter the lastname",
+            "match": {
+              "location": "src\\test\\steps\\registersteps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30157499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User have to enter the email",
+            "match": {
+              "location": "src\\test\\steps\\registersteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35623200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "User have to enter the phone number",
+            "match": {
+              "location": "src\\test\\steps\\registersteps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26293300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "User have to enter the password in the field",
+            "match": {
+              "location": "src\\test\\steps\\registersteps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27714200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "User have to enter the confirm password",
+            "match": {
+              "location": "src\\test\\steps\\registersteps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24748799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "User have to click agree button",
+            "match": {
+              "location": "src\\test\\steps\\registersteps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 64254599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "User click the continue button",
+            "match": {
+              "location": "src\\test\\steps\\registersteps.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1020792599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "User should see the successfull register",
+            "match": {
+              "location": "src\\test\\steps\\registersteps.ts:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44917499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 86382100
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "register",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Register",
+    "tags": [],
+    "uri": "src\\test\\features\\register.feature"
   }
 ]

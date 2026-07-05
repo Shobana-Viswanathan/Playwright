@@ -23,7 +23,7 @@ When('User clicks the login button', async function (this:CustomWorld) {
 });
 
 Then('User should have successfull login', async function (this:CustomWorld) {
-  await expect(this.loginPage.getloginmsg()).toBe('My Account');
+   expect(await this.loginPage.getloginmsg()).toBe('My Account');
 });
 
 Given('User have to enter the invalid password', async function (this:CustomWorld) {

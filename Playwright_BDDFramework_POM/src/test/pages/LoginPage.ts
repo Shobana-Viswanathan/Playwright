@@ -34,10 +34,10 @@ export class LoginPage extends BasePage{
         await this.click(this.loginbtn);
     }
     async getloginmsg(){
-        await this.getText(this.loginmsg);
+       return await this.getText(this.loginmsg);
     }
     async geterrmsg(){
-        await this.getText(this.errmsg);
+       return await this.getText(this.errmsg);
     }
 
 }
