@@ -1,4 +1,6 @@
 import {BasePage} from '../pages/BasePage';
+import { faker } from '@faker-js/faker';
+
 export class RegisterPage extends BasePage{
 private myacc=this.page.locator("//span[text()='My Account']/parent::a");
 private reg=this.page.locator("//a[text()='Register']");
@@ -22,8 +24,10 @@ async enterfname(){
 async enterlname(){
     await this.fill(this.lname,"S");
 }
-async enteremail(){
-    await this.fill(this.email,"sharm@gmail.com");
+
+async enteremail() {
+    const email = faker.internet.email();
+    await this.fill(this.email, email);
 }
 async enterphno(){
     await this.fill(this.phno,"9876543210");

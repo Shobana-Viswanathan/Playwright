@@ -4,6 +4,7 @@ import { CustomWorld } from '../world/CustomWorld';
 import {LoginPage} from '../pages/LoginPage';
 import { RegisterPage } from '../pages/RegisterPage';
 import {logger} from '../utils/winstonlogger';
+import { SearchPage } from '../pages/searchPage';
 
 let browser:Browser;
 BeforeAll(async()=>{
@@ -18,6 +19,7 @@ Before(async function (this:CustomWorld,scenario) {
     
     this.loginPage = new LoginPage(this.page);
     this.registerPage=new RegisterPage(this.page);
+    this.searchPage=new SearchPage(this.page);
 });
 After(async function (this:CustomWorld,scenario) {
     if(scenario.result?.status== "FAILED"){

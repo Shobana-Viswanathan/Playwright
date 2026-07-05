@@ -10,7 +10,9 @@
     "parallel": "cucumber-js src/test/features --parallel 2",
     "failed": "cucumber-js @rerun.txt",
     "ci": "cucumber-js src/test/features --tags @smoke --format json:reports/report.json",
-    "posttest": "npx ts-node src/helper/report.ts"
+    "posttest": "npx ts-node src/test/helper/report.ts",
+    "allure:generate": "allure generate reports/allure-results --clean -o reports/allure-report",
+    "allure:open": "allure open reports/allure-report"
   },
   "keywords": [],
   "author": "",
@@ -20,12 +22,16 @@
     "@cucumber/cucumber": "^13.0.0",
     "@playwright/test": "^1.61.1",
     "@types/node": "^26.1.0",
+    "allure-commandline": "^2.43.0",
+    "allure-cucumberjs": "^3.10.2",
+    "allure-js-commons": "^3.10.2",
     "cross-env": "^10.1.0",
-    "multiple-cucumber-html-reporter": "^4.0.0",
+    "multiple-cucumber-html-reporter": "^3.10.0",
     "ts-node": "^10.9.2",
     "winston": "^3.19.0"
   },
   "dependencies": {
+    "@faker-js/faker": "^10.5.0",
     "csv-parse": "^7.0.1",
     "dotenv": "^17.4.2"
   }

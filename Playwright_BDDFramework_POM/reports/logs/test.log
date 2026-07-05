@@ -65,3 +65,116 @@
 [2026-07-05T08:23:04.915Z] INFO-Scenario Passed:Invalid login to the application
 [2026-07-05T08:23:08.704Z] INFO-Scenario Passed:User register to application
 [2026-07-05T08:23:08.795Z] INFO-Browser Closed
+[2026-07-05T09:51:34.927Z] INFO-Browser Launched
+[2026-07-05T09:51:46.868Z] INFO-Scenario Passed:Search different products
+[2026-07-05T09:51:49.982Z] INFO-Scenario Passed:Search different products
+[2026-07-05T09:51:50.260Z] INFO-Browser Closed
+[2026-07-05T09:56:03.229Z] INFO-Browser Launched
+[2026-07-05T09:56:07.507Z] INFO-Scenario Passed:Valid login to the application
+[2026-07-05T09:56:11.226Z] INFO-Scenario Passed:Invalid login to the application
+[2026-07-05T09:56:19.547Z] ERROR-Scenario Failed: User register to application
+[2026-07-05T09:56:19.548Z] ERROR-Screenshot Saved:reports/screenshots/1783245379426.png
+[2026-07-05T09:56:21.499Z] ERROR-Scenario Failed: Search different products
+[2026-07-05T09:56:21.499Z] ERROR-Screenshot Saved:reports/screenshots/1783245381260.png
+[2026-07-05T09:56:23.448Z] ERROR-Scenario Failed: Search different products
+[2026-07-05T09:56:23.448Z] ERROR-Screenshot Saved:reports/screenshots/1783245383230.png
+[2026-07-05T09:56:23.575Z] INFO-Browser Closed
+[2026-07-05T09:59:17.827Z] INFO-Browser Launched
+[2026-07-05T09:59:22.183Z] INFO-Scenario Passed:Valid login to the application
+[2026-07-05T09:59:26.035Z] INFO-Scenario Passed:Invalid login to the application
+[2026-07-05T09:59:34.327Z] ERROR-Scenario Failed: User register to application
+[2026-07-05T09:59:34.327Z] ERROR-Screenshot Saved:reports/screenshots/1783245574192.png
+[2026-07-05T09:59:36.729Z] INFO-Scenario Passed:Search different products
+[2026-07-05T09:59:39.039Z] INFO-Scenario Passed:Search different products
+[2026-07-05T09:59:39.167Z] INFO-Browser Closed
+[2026-07-05T10:02:17.408Z] INFO-Browser Launched
+[2026-07-05T10:02:24.590Z] INFO-Scenario Passed:Valid login to the application
+[2026-07-05T10:02:28.474Z] INFO-Scenario Passed:Invalid login to the application
+[2026-07-05T10:02:36.735Z] ERROR-Scenario Failed: User register to application
+[2026-07-05T10:02:36.735Z] ERROR-Screenshot Saved:reports/screenshots/1783245756621.png
+[2026-07-05T10:02:39.041Z] INFO-Scenario Passed:Search different products
+[2026-07-05T10:02:41.373Z] INFO-Scenario Passed:Search different products
+[2026-07-05T10:02:43.913Z] INFO-Scenario Passed:Search non-existing product
+[2026-07-05T10:02:43.998Z] INFO-Browser Closed
+[2026-07-05T10:03:34.720Z] INFO-Browser Launched
+[2026-07-05T10:03:39.513Z] INFO-Scenario Passed:Valid login to the application
+[2026-07-05T10:03:42.672Z] INFO-Scenario Passed:Invalid login to the application
+[2026-07-05T10:03:50.725Z] ERROR-Scenario Failed: User register to application
+[2026-07-05T10:03:50.725Z] ERROR-Screenshot Saved:reports/screenshots/1783245830562.png
+[2026-07-05T10:03:52.922Z] INFO-Scenario Passed:Search different products
+[2026-07-05T10:03:55.092Z] INFO-Scenario Passed:Search different products
+[2026-07-05T10:03:57.341Z] INFO-Scenario Passed:Search non-existing product
+[2026-07-05T10:03:57.395Z] INFO-Browser Closed
+[2026-07-05T10:05:59.900Z] INFO-Browser Launched
+[2026-07-05T10:06:04.054Z] INFO-Scenario Passed:Valid login to the application
+[2026-07-05T10:06:07.146Z] INFO-Scenario Passed:Invalid login to the application
+[2026-07-05T10:06:15.629Z] ERROR-Scenario Failed: User register to application
+[2026-07-05T10:06:15.629Z] ERROR-Screenshot Saved:reports/screenshots/1783245975528.png
+[2026-07-05T10:06:18.450Z] ERROR-Scenario Failed: Search different products
+[2026-07-05T10:06:18.450Z] ERROR-Screenshot Saved:reports/screenshots/1783245978220.png
+[2026-07-05T10:06:25.792Z] ERROR-Scenario Failed: Search different products
+[2026-07-05T10:06:25.792Z] ERROR-Screenshot Saved:reports/screenshots/1783245985650.png
+[2026-07-05T10:06:27.934Z] INFO-Scenario Passed:Search non-existing product
+[2026-07-05T10:06:28.000Z] INFO-Browser Closed
+[2026-07-05T10:10:23.185Z] INFO-Browser Launched
+[2026-07-05T10:10:28.044Z] INFO-Scenario Passed:Valid login to the application
+[2026-07-05T10:10:31.995Z] INFO-Scenario Passed:Invalid login to the application
+[2026-07-05T10:10:35.778Z] INFO-Scenario Passed:User register to application
+[2026-07-05T10:10:38.510Z] ERROR-Scenario Failed: Search different products
+[2026-07-05T10:10:38.511Z] ERROR-Screenshot Saved:reports/screenshots/1783246238279.png
+[2026-07-05T10:10:41.033Z] ERROR-Scenario Failed: Search different products
+[2026-07-05T10:10:41.033Z] ERROR-Screenshot Saved:reports/screenshots/1783246240857.png
+[2026-07-05T10:10:43.342Z] INFO-Scenario Passed:Search non-existing product
+[2026-07-05T10:10:43.422Z] INFO-Browser Closed
+[2026-07-05T10:12:45.920Z] INFO-Browser Launched
+[2026-07-05T10:12:50.006Z] INFO-Scenario Passed:Valid login to the application
+[2026-07-05T10:12:53.493Z] INFO-Scenario Passed:Invalid login to the application
+[2026-07-05T10:12:57.606Z] INFO-Scenario Passed:User register to application
+[2026-07-05T10:13:00.384Z] INFO-Scenario Passed:Search different products
+[2026-07-05T10:13:08.303Z] ERROR-Scenario Failed: Search different products
+[2026-07-05T10:13:08.303Z] ERROR-Screenshot Saved:reports/screenshots/1783246388167.png
+[2026-07-05T10:13:10.689Z] INFO-Scenario Passed:Search non-existing product
+[2026-07-05T10:13:10.763Z] INFO-Browser Closed
+[2026-07-05T10:16:03.000Z] INFO-Browser Launched
+[2026-07-05T10:16:08.711Z] INFO-Scenario Passed:Valid login to the application
+[2026-07-05T10:16:11.911Z] INFO-Scenario Passed:Invalid login to the application
+[2026-07-05T10:16:16.061Z] INFO-Scenario Passed:User register to application
+[2026-07-05T10:16:18.652Z] INFO-Scenario Passed:Search different products
+[2026-07-05T10:16:21.323Z] ERROR-Scenario Failed: Search different products
+[2026-07-05T10:16:21.324Z] ERROR-Screenshot Saved:reports/screenshots/1783246581206.png
+[2026-07-05T10:16:23.554Z] INFO-Scenario Passed:Search non-existing product
+[2026-07-05T10:16:23.613Z] INFO-Browser Closed
+[2026-07-05T10:17:11.226Z] INFO-Browser Launched
+[2026-07-05T10:17:15.050Z] INFO-Scenario Passed:Valid login to the application
+[2026-07-05T10:17:18.800Z] INFO-Scenario Passed:Invalid login to the application
+[2026-07-05T10:17:22.576Z] INFO-Scenario Passed:User register to application
+[2026-07-05T10:17:25.049Z] INFO-Scenario Passed:Search different products
+[2026-07-05T10:17:27.573Z] INFO-Scenario Passed:Search different products
+[2026-07-05T10:17:30.383Z] INFO-Scenario Passed:Search non-existing product
+[2026-07-05T10:17:30.488Z] INFO-Browser Closed
+[2026-07-05T10:31:14.126Z] INFO-Browser Launched
+[2026-07-05T10:31:20.467Z] INFO-Scenario Passed:Valid login to the application
+[2026-07-05T10:31:24.125Z] INFO-Scenario Passed:Invalid login to the application
+[2026-07-05T10:31:27.773Z] INFO-Scenario Passed:User register to application
+[2026-07-05T10:31:30.164Z] INFO-Scenario Passed:Search different products
+[2026-07-05T10:31:32.574Z] INFO-Scenario Passed:Search different products
+[2026-07-05T10:31:34.719Z] INFO-Scenario Passed:Search non-existing product
+[2026-07-05T10:31:34.789Z] INFO-Browser Closed
+[2026-07-05T10:45:59.765Z] INFO-Browser Launched
+[2026-07-05T10:47:02.872Z] INFO-Browser Closed
+[2026-07-05T11:03:36.657Z] INFO-Browser Launched
+[2026-07-05T11:03:41.945Z] INFO-Scenario Passed:Valid login to the application
+[2026-07-05T11:03:45.412Z] INFO-Scenario Passed:Invalid login to the application
+[2026-07-05T11:03:49.511Z] INFO-Scenario Passed:User register to application
+[2026-07-05T11:03:51.913Z] INFO-Scenario Passed:Search different products
+[2026-07-05T11:03:54.809Z] INFO-Scenario Passed:Search different products
+[2026-07-05T11:03:57.220Z] INFO-Scenario Passed:Search non-existing product
+[2026-07-05T11:03:57.312Z] INFO-Browser Closed
+[2026-07-05T11:22:25.604Z] INFO-Browser Launched
+[2026-07-05T11:22:30.994Z] INFO-Scenario Passed:Valid login to the application
+[2026-07-05T11:22:34.397Z] INFO-Scenario Passed:Invalid login to the application
+[2026-07-05T11:22:37.995Z] INFO-Scenario Passed:User register to application
+[2026-07-05T11:22:40.795Z] INFO-Scenario Passed:Search different products
+[2026-07-05T11:22:43.372Z] INFO-Scenario Passed:Search different products
+[2026-07-05T11:22:45.641Z] INFO-Scenario Passed:Search non-existing product
+[2026-07-05T11:22:45.704Z] INFO-Browser Closed
