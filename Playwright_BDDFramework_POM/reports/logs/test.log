@@ -178,3 +178,21 @@
 [2026-07-05T11:22:43.372Z] INFO-Scenario Passed:Search different products
 [2026-07-05T11:22:45.641Z] INFO-Scenario Passed:Search non-existing product
 [2026-07-05T11:22:45.704Z] INFO-Browser Closed
+[2026-07-06T05:20:58.178Z] INFO-Browser Launched
+[2026-07-06T05:21:04.239Z] INFO-Scenario Passed:Valid login to the application
+[2026-07-06T05:21:07.231Z] INFO-Scenario Passed:Invalid login to the application
+[2026-07-06T05:21:08.625Z] INFO-Scenario Passed:Login using data table
+[2026-07-06T05:21:11.799Z] INFO-Scenario Passed:User register to application
+[2026-07-06T05:21:13.490Z] INFO-Scenario Passed:Search different products
+[2026-07-06T05:21:15.515Z] INFO-Scenario Passed:Search different products
+[2026-07-06T05:21:17.096Z] INFO-Scenario Passed:Search non-existing product
+[2026-07-06T05:21:17.115Z] INFO-Browser Closed
+[2026-07-06T05:46:50.715Z] INFO-Browser Launched
+[2026-07-06T05:46:57.248Z] INFO-Scenario Passed:Valid login to the application
+[2026-07-06T05:46:59.479Z] INFO-Scenario Passed:Invalid login to the application
+[2026-07-06T05:47:02.063Z] INFO-Scenario Passed:Login using data table
+[2026-07-06T05:47:04.907Z] INFO-Scenario Passed:User register to application
+[2026-07-06T05:47:06.995Z] INFO-Scenario Passed:Search different products
+[2026-07-06T05:47:08.609Z] INFO-Scenario Passed:Search different products
+[2026-07-06T05:47:10.660Z] INFO-Scenario Passed:Search non-existing product
+[2026-07-06T05:47:10.682Z] INFO-Browser Closed
