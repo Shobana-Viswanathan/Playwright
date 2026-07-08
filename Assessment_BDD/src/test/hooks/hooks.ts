@@ -1,4 +1,5 @@
-
+import dotenv from "dotenv";
+dotenv.config({path: "./env/.env.qa"});
 import {Before,After,BeforeAll,AfterAll,} from '@cucumber/cucumber';
 import {Browser, chromium} from "@playwright/test";
 import {CustomWorld} from '../world/customWorld';
@@ -22,11 +23,11 @@ Before(async function (this:CustomWorld) {
    
 });
 After(async function (this:CustomWorld,scenario) {
-    if(scenario.result?.status== "FAILED"){
+    
         const path=`reports/screenshots/${Date.now()}.png`;
         await this.page.screenshot({path});
        
-}
+
     
      await this.page.close();
     await this.context.close();

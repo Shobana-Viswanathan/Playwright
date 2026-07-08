@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 172156100
+              "duration": 434977800
             }
           },
           {
@@ -26,8 +26,9 @@
               "location": "src\\test\\steps\\registerSteps.ts:5"
             },
             "result": {
-              "status": "passed",
-              "duration": 3831930200
+              "status": "failed",
+              "duration": 5019470499,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\Hp\\OneDrive\\Desktop\\Playwright\\Assessment_BDD\\node_modules\\@cucumber\\cucumber\\src\\time.ts:50:14)\n    at listOnTimeout (node:internal/timers:605:17)\n    at processTimers (node:internal/timers:541:7)"
             }
           },
           {
@@ -39,8 +40,8 @@
               "location": "src\\test\\steps\\loginSteps.ts:5"
             },
             "result": {
-              "status": "passed",
-              "duration": 496774100
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -52,8 +53,8 @@
               "location": "src\\test\\steps\\loginSteps.ts:9"
             },
             "result": {
-              "status": "passed",
-              "duration": 88405099
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -65,8 +66,8 @@
               "location": "src\\test\\steps\\loginSteps.ts:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 29012300
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -78,8 +79,8 @@
               "location": "src\\test\\steps\\loginSteps.ts:17"
             },
             "result": {
-              "status": "passed",
-              "duration": 856722499
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -91,8 +92,8 @@
               "location": "src\\test\\steps\\loginSteps.ts:21"
             },
             "result": {
-              "status": "passed",
-              "duration": 60238300
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -100,7 +101,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 23109300
+              "duration": 2425450300
             }
           }
         ],
@@ -119,7 +120,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 129733799
+              "duration": 195920200
             }
           },
           {
@@ -131,9 +132,8 @@
               "location": "src\\test\\steps\\registerSteps.ts:5"
             },
             "result": {
-              "status": "failed",
-              "duration": 5006084600,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\Hp\\OneDrive\\Desktop\\Playwright\\Assessment_BDD\\node_modules\\@cucumber\\cucumber\\src\\time.ts:50:14)\n    at listOnTimeout (node:internal/timers:605:17)\n    at processTimers (node:internal/timers:541:7)"
+              "status": "passed",
+              "duration": 4954023600
             }
           },
           {
@@ -145,8 +145,8 @@
               "location": "src\\test\\steps\\loginSteps.ts:5"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 549028800
             }
           },
           {
@@ -158,8 +158,8 @@
               "location": "src\\test\\steps\\loginSteps.ts:9"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 141956900
             }
           },
           {
@@ -171,8 +171,8 @@
               "location": "src\\test\\steps\\loginSteps.ts:13"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 30532299
             }
           },
           {
@@ -184,8 +184,8 @@
               "location": "src\\test\\steps\\loginSteps.ts:17"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 449331500
             }
           },
           {
@@ -197,17 +197,16 @@
               "location": "src\\test\\steps\\loginSteps.ts:21"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 79591199
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 5019773900,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\Hp\\OneDrive\\Desktop\\Playwright\\Assessment_BDD\\node_modules\\@cucumber\\cucumber\\src\\time.ts:50:14)\n    at listOnTimeout (node:internal/timers:605:17)\n    at processTimers (node:internal/timers:541:7)"
+              "status": "passed",
+              "duration": 19942700
             }
           }
         ],
@@ -237,7 +236,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 123816600
+              "duration": 123938899
             }
           },
           {
@@ -249,9 +248,8 @@
               "location": "src\\test\\steps\\registerSteps.ts:5"
             },
             "result": {
-              "status": "failed",
-              "duration": 5004670699,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\Hp\\OneDrive\\Desktop\\Playwright\\Assessment_BDD\\node_modules\\@cucumber\\cucumber\\src\\time.ts:50:14)\n    at listOnTimeout (node:internal/timers:605:17)\n    at processTimers (node:internal/timers:541:7)"
+              "status": "passed",
+              "duration": 3994369500
             }
           },
           {
@@ -263,8 +261,8 @@
               "location": "src\\test\\steps\\registerSteps.ts:9"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 518132600
             }
           },
           {
@@ -276,8 +274,8 @@
               "location": "src\\test\\steps\\registerSteps.ts:13"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 204302600
             }
           },
           {
@@ -289,8 +287,8 @@
               "location": "src\\test\\steps\\registerSteps.ts:31"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1152283500
             }
           },
           {
@@ -302,8 +300,8 @@
               "location": "src\\test\\steps\\registerSteps.ts:35"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 57332500
             }
           },
           {
@@ -311,7 +309,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 4392539300
+              "duration": 13293600
             }
           }
         ],
