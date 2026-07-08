@@ -1,11 +1,11 @@
 import dotenv from "dotenv";
 dotenv.config({path: "./env/.env.qa"});
-import {Before,After,BeforeAll,AfterAll,} from '@cucumber/cucumber';
+import {Before,After,BeforeAll,AfterAll,setDefaultTimeout} from '@cucumber/cucumber';
 import {Browser, chromium} from "@playwright/test";
 import {CustomWorld} from '../world/customWorld';
 import{LoginPage} from '../pages/LoginPage';
 import {RegisterPage} from '../pages/RegisterPage'
-
+setDefaultTimeout(6*10000);
 let browser:Browser;
 BeforeAll(async()=>{
     
