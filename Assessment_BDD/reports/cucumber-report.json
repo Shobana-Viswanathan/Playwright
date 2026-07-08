@@ -1,0 +1,329 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-functionality;login",
+        "keyword": "Scenario Outline",
+        "line": 15,
+        "name": "Login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 172156100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User should be navigated to the demowebshop application",
+            "match": {
+              "location": "src\\test\\steps\\registerSteps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3831930200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "User clicks the Login button in the application",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 496774100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User enters the \"shobs1@gmail.com\" email",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 88405099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "User enters the \"sho@123\" password",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29012300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 856722499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "User should see \"success\"",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60238300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 23109300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;login",
+        "keyword": "Scenario Outline",
+        "line": 16,
+        "name": "Login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 129733799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User should be navigated to the demowebshop application",
+            "match": {
+              "location": "src\\test\\steps\\registerSteps.ts:5"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5006084600,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\Hp\\OneDrive\\Desktop\\Playwright\\Assessment_BDD\\node_modules\\@cucumber\\cucumber\\src\\time.ts:50:14)\n    at listOnTimeout (node:internal/timers:605:17)\n    at processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "User clicks the Login button in the application",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:5"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User enters the \"shobs1@gmail.com\" email",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:9"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "User enters the \"sh123\" password",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "User clicks the login button",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:17"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "User should see \"error\"",
+            "match": {
+              "location": "src\\test\\steps\\loginSteps.ts:21"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 5019773900,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\Hp\\OneDrive\\Desktop\\Playwright\\Assessment_BDD\\node_modules\\@cucumber\\cucumber\\src\\time.ts:50:14)\n    at listOnTimeout (node:internal/timers:605:17)\n    at processTimers (node:internal/timers:541:7)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login Functionality",
+    "tags": [],
+    "uri": "src\\test\\features\\login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "register-functionality;register",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Register",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 123816600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "User should be navigated to the demowebshop application",
+            "match": {
+              "location": "src\\test\\steps\\registerSteps.ts:5"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5004670699,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\Hp\\OneDrive\\Desktop\\Playwright\\Assessment_BDD\\node_modules\\@cucumber\\cucumber\\src\\time.ts:50:14)\n    at listOnTimeout (node:internal/timers:605:17)\n    at processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User clicks the register button in the application",
+            "match": {
+              "location": "src\\test\\steps\\registerSteps.ts:9"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "User enters their personal details like gender,firstname,lastname,email,password",
+            "match": {
+              "location": "src\\test\\steps\\registerSteps.ts:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User clicks register button",
+            "match": {
+              "location": "src\\test\\steps\\registerSteps.ts:31"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "User should have successfull register",
+            "match": {
+              "location": "src\\test\\steps\\registerSteps.ts:35"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4392539300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "register-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Register functionality",
+    "tags": [],
+    "uri": "src\\test\\features\\register.feature"
+  }
+]

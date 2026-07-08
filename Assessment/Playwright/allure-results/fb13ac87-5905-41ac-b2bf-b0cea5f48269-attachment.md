@@ -1,0 +1,1456 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Q3.test.ts >> Bing web Test
+- Location: tests\Q3.test.ts:2:5
+
+# Error details
+
+```
+Test timeout of 60000ms exceeded.
+```
+
+```
+Error: locator.click: Test timeout of 60000ms exceeded.
+Call log:
+  - waiting for locator('//li[@class=\'b_algo\']//h2/a').first()
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - main [ref=e16]:
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - heading "Microsoft Logo Image" [level=1] [ref=e19]:
+          - img "Microsoft Logo Image" [ref=e20] [cursor=pointer]
+        - navigation [ref=e28]:
+          - menubar [ref=e29]:
+            - menuitem "Copilot" [ref=e30] [cursor=pointer]:
+              - link "Copilot" [ref=e31]:
+                - /url: /chat?FORM=hpcodx&intent=bing
+                - generic [ref=e33]: Copilot
+            - menuitem "Images" [ref=e34] [cursor=pointer]:
+              - link "Images" [ref=e35]:
+                - /url: /images?FORM=Z9LH
+            - menuitem "Videos" [ref=e36] [cursor=pointer]:
+              - link "Videos" [ref=e37]:
+                - /url: /videos?FORM=Z9LH1
+            - menuitem "Shopping" [ref=e38] [cursor=pointer]:
+              - link "Shopping" [ref=e39]:
+                - /url: /shop?FORM=Z9LHS4
+            - menuitem "Maps" [ref=e40] [cursor=pointer]:
+              - link "Maps" [ref=e41]:
+                - /url: /maps?FORM=Z9LH2
+            - menuitem "News" [ref=e42] [cursor=pointer]:
+              - link "News" [ref=e43]:
+                - /url: /news/search?q=Top+stories&nvaug=%5bNewsVertical+Category%3d%22rt_MaxClass%22%5d&FORM=Z9LH3
+            - menuitem ". . . More" [ref=e44] [cursor=pointer]:
+              - text: . . .
+              - button "More" [ref=e45]
+      - complementary "Account Rewards and Preferences" [ref=e48]:
+        - link "Sign in Sign in" [ref=e49]:
+          - /url: javascript:void(0)
+          - generic [ref=e50]: Sign in
+          - generic "Sign in" [ref=e51]
+        - button "Microsoft Rewards" [ref=e52]:
+          - generic [ref=e54] [cursor=pointer]:
+            - generic [ref=e55]: Rewards
+            - img [ref=e57]
+        - button "Mobile" [ref=e63]:
+          - generic [ref=e64]: Mobile
+          - img [ref=e65]
+        - button "Settings and quick links" [ref=e68]
+        - generic [ref=e69]:
+          - link "Microsoft Rewards Notification Image Every fan has to take Pick the winner, trust your instincts, and let Microsoft AI back your play" [ref=e70]:
+            - /url: https://bing.com/tools/ai/soccer-cup-simulator?form=ML2XWJ&OCID=ML2XWJ
+            - img "Microsoft Rewards" [ref=e72]
+            - img "Notification Image" [ref=e73]
+            - generic [ref=e74]:
+              - generic "Every fan has to take" [ref=e75]
+              - generic [ref=e76]: Pick the winner, trust your instincts, and let Microsoft AI back your play
+          - generic [ref=e77]:
+            - link "Predict now" [ref=e78] [cursor=pointer]:
+              - /url: https://bing.com/tools/ai/soccer-cup-simulator?form=ML2XWJ&OCID=ML2XWJ
+            - generic "Later" [ref=e79] [cursor=pointer]
+    - generic [ref=e80]:
+      - search [ref=e81]:
+        - img [ref=e83] [cursor=pointer]
+        - combobox "Enter your search here - Search suggestions will show as you type" [expanded] [active] [ref=e87]:
+          - text: playwright playwright
+          - listbox "Suggestions" [ref=e92]:
+            - option "playwright mcp server" [ref=e93] [cursor=pointer]:
+              - strong [ref=e98]: playwright mcp server
+            - option "playwright interview questions" [ref=e99] [cursor=pointer]:
+              - strong [ref=e104]: playwright interview questions
+            - option "playwright trace viewer" [ref=e105] [cursor=pointer]:
+              - strong [ref=e110]: playwright trace viewer
+            - option "playwright interview questions and answers" [ref=e111] [cursor=pointer]:
+              - strong [ref=e116]: playwright interview questions and answers
+            - option "playwright vs selenium" [ref=e117] [cursor=pointer]:
+              - strong [ref=e122]: playwright vs selenium
+            - option "playwright automation tutorial" [ref=e123] [cursor=pointer]:
+              - strong [ref=e128]: playwright automation tutorial
+            - option "playwright api testing" [ref=e129] [cursor=pointer]:
+              - strong [ref=e134]: playwright api testing
+            - option "playwright tutorial for beginners" [ref=e135] [cursor=pointer]:
+              - strong [ref=e140]: playwright tutorial for beginners
+        - button "Clear" [ref=e141]:
+          - img [ref=e142]
+        - link "Open Copilot" [ref=e144]:
+          - /url: /chat?FORM=hpcodx&intent=bing
+        - group "Languages:" [ref=e148]:
+          - generic [ref=e149]: "Languages:"
+          - link "Hindi" [ref=e150]:
+            - /url: /?setlang=hi&cc=in&cc=IN
+            - text: हिंदी
+          - link "Bangla" [ref=e151]:
+            - /url: /?setlang=bn&cc=in&cc=IN
+            - text: বাংলা
+          - link "Urdu" [ref=e152]:
+            - /url: /?setlang=ur&cc=in&cc=IN
+            - text: اردو
+          - link "Punjabi (Gurmukhi)" [ref=e153]:
+            - /url: /?setlang=pa-guru&cc=in&cc=IN
+            - text: ਪੰਜਾਬੀ
+          - link "Marathi" [ref=e154]:
+            - /url: /?setlang=mr&cc=in&cc=IN
+            - text: मराठी
+          - link "Telugu" [ref=e155]:
+            - /url: /?setlang=te&cc=in&cc=IN
+            - text: తెలుగు
+          - link "Tamil" [ref=e156]:
+            - /url: /?setlang=ta&cc=in&cc=IN
+            - text: தமிழ்
+          - link "Kannada" [ref=e157]:
+            - /url: /?setlang=kn&cc=in&cc=IN
+            - text: ಕನ್ನಡ
+          - link "Gujarati" [ref=e158]:
+            - /url: /?setlang=gu&cc=in&cc=IN
+            - text: ગુજરાતી
+          - link "Malayalam" [ref=e159]:
+            - /url: /?setlang=ml&cc=in&cc=IN
+            - text: മലയാളം
+          - link "Odia" [ref=e160]:
+            - /url: /?setlang=or&cc=in&cc=IN
+            - text: ଓଡ଼ିଆ
+      - generic [ref=e163]:
+        - link "Create wallpaper" [ref=e164]:
+          - /url: /search?q=create wallpaper&filters=aimode%3A%2235%22&FORM=bichpw
+          - generic [ref=e166]: Create wallpaper
+        - link "Video creator" [ref=e167]:
+          - /url: /images/create/ai-video-generator?bicsource=hp&FORM=bvcbhp
+          - generic [ref=e169]: Video creator
+        - link "Text creator" [ref=e170]:
+          - /url: /search?q=bing ai writing&FORM=btcbhp
+          - generic [ref=e172]: Text creator
+  - generic [ref=e175]:
+    - generic [ref=e176]:
+      - dialog "Bing homepage quiz Which ancient city was founded by settlers from Corinth?" [ref=e178]:
+        - group "Bing homepage quiz Which ancient city was founded by settlers from Corinth?" [ref=e179]:
+          - generic [ref=e180]: Bing homepage quiz
+          - generic [ref=e181]: Which ancient city was founded by settlers from Corinth?
+          - list [ref=e182]:
+            - listitem [ref=e183]:
+              - 'link "Answer: A, Athens, 1 of 3" [ref=e184]':
+                - /url: /search?q=Syracuse&filters=mgzv3configlist%3A%22BingQA_Quiz_layout%22+IsConversation%3A%22True%22+btrequestsource%3A%22homepage%22+WQOskey%3A%22HPQuiz_20260706_SyracuseItaly%22+WQId%3A%221%22+WQQI%3A%220%22+WQCI%3A%220%22+UserChoices%3A%220%22+ShowTimesTaskPaneTrigger%3A%22false%22+WQSCORE%3A%220%22&FORM=HPQUIZ
+                - generic [ref=e185]: A
+                - text: Athens
+            - listitem [ref=e186]:
+              - 'link "Answer: B, Syracuse, 2 of 3" [ref=e187]':
+                - /url: /search?q=Syracuse&filters=mgzv3configlist%3A%22BingQA_Quiz_layout%22+IsConversation%3A%22True%22+btrequestsource%3A%22homepage%22+WQOskey%3A%22HPQuiz_20260706_SyracuseItaly%22+WQId%3A%221%22+WQQI%3A%220%22+WQCI%3A%221%22+UserChoices%3A%221%22+ShowTimesTaskPaneTrigger%3A%22false%22+WQSCORE%3A%221%22&FORM=HPQUIZ
+                - generic [ref=e188]: B
+                - text: Syracuse
+            - listitem [ref=e189]:
+              - 'link "Answer: C, Sparta, 3 of 3" [ref=e190]':
+                - /url: /search?q=Syracuse&filters=mgzv3configlist%3A%22BingQA_Quiz_layout%22+IsConversation%3A%22True%22+btrequestsource%3A%22homepage%22+WQOskey%3A%22HPQuiz_20260706_SyracuseItaly%22+WQId%3A%221%22+WQQI%3A%220%22+WQCI%3A%222%22+UserChoices%3A%222%22+ShowTimesTaskPaneTrigger%3A%22false%22+WQSCORE%3A%220%22&FORM=HPQUIZ
+                - generic [ref=e191]: C
+                - text: Sparta
+      - generic [ref=e192]:
+        - generic:
+          - 'heading "Image of the day: Syracuse, Sicily, Italy" [level=3]':
+            - 'link "Image of the day: Syracuse, Sicily, Italy"':
+              - /url: /search?q=Syracuse+Sicily&form=hpcapt&filters=HpDate:"20260705_1830"+mgzv3configlist:"BingQA_Encyclopedia_Layout"
+              - text: Syracuse, Sicily, Italy
+          - generic:
+            - generic: © Balate Dorin/Getty Images
+            - list:
+              - listitem:
+                - button "Download this image. Use of this image is restricted to wallpaper only."
+        - generic [ref=e193]:
+          - link "A city written in centuries" [ref=e195]:
+            - /url: /search?q=Syracuse+Sicily&form=hpcapt&filters=HpDate:"20260705_1830"+mgzv3configlist:"BingQA_Encyclopedia_Layout"
+            - img [ref=e197]
+            - heading "A city written in centuries" [level=2] [ref=e200]
+          - generic [ref=e201] [cursor=pointer]:
+            - status [ref=e202]
+            - button "Previous image" [ref=e203]
+            - button "Next image" [disabled] [ref=e205]
+    - button "Feedback" [ref=e207] [cursor=pointer]:
+      - img [ref=e208]
+      - generic: Feedback
+    - generic [ref=e210]:
+      - region "Trending on Bing" [ref=e211]:
+        - generic:
+          - status [ref=e212]
+          - button "Toggle feed area position" [expanded] [ref=e213] [cursor=pointer]
+          - button "Previous news" [disabled]
+          - button "More news" [ref=e215] [cursor=pointer]
+        - list [ref=e217]:
+          - listitem [ref=e218]:
+            - list [ref=e219]:
+              - listitem [ref=e220] [cursor=pointer]:
+                - link "Livelihoods lost, Bengaluru street vendors face uncertainty © The New Indian Express" [ref=e221]:
+                  - /url: /search?q=Livelihoods+lost%2c+Bengaluru+street+vendors+face+uncertainty&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_FADC4EC2DF76FCEF9FD718161F29C4BA%22+tnVersion%3a%228a580c16-a6bd-4f1f-9225-9f4db4e3d374%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%220%22+tnOrder%3a%226e0608d0-a941-42da-9ad0-a7d63f1ad846%22&form=HPNN01
+                  - generic [ref=e222]:
+                    - heading "Livelihoods lost, Bengaluru street vendors face uncertainty" [level=2] [ref=e223]:
+                      - generic [ref=e224]: Livelihoods lost, Bengaluru street vendors face uncertainty
+                    - img "© The New Indian Express" [ref=e225]
+                    - link "Read Article":
+                      - /url: https://www.msn.com/en-in/news/India/livelihoods-lost-bengaluru-street-vendors-face-uncertainty/ar-AA27hV9S?ocid=TobArticle
+                      - img [ref=e226]
+              - listitem [ref=e229] [cursor=pointer]:
+                - link "Woman threatens to jump off terrace with son in Bengaluru, rescued © The New Indian Express" [ref=e230]:
+                  - /url: /search?q=Woman+threatens+to+jump+off+terrace+with+son+in+Bengaluru%2c+rescued&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_8DE768CCAFA28C0BB85D0EC63795A72A%22+tnVersion%3a%228a580c16-a6bd-4f1f-9225-9f4db4e3d374%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%221%22+tnOrder%3a%226e0608d0-a941-42da-9ad0-a7d63f1ad846%22&form=HPNN01
+                  - generic [ref=e231]:
+                    - heading "Woman threatens to jump off terrace with son in Bengaluru, rescued" [level=2] [ref=e232]:
+                      - generic [ref=e233]: Woman threatens to jump off terrace with son in Bengaluru, rescued
+                    - img "© The New Indian Express" [ref=e234]
+                    - link "Read Article":
+                      - /url: https://www.msn.com/en-in/news/India/woman-threatens-to-jump-off-terrace-with-son-in-bengaluru-rescued/ar-AA27h9Y1?ocid=TobArticle
+                      - img [ref=e235]
+              - listitem [ref=e238] [cursor=pointer]:
+                - 'link "Mumbai rains: ''Stuck plastic'' halts Central Line services, Western Railway cancels several trains © Copyright (C) news18.com. All Rights Reserved." [ref=e239]':
+                  - /url: /search?q=Mumbai+rains%3a+%27Stuck+plastic%27+halts+Central+Line+services%2c+Western+Railway+cancels+several+trains&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_7AE0D82E4EC5E09D58227F8B72CB748D%22+tnVersion%3a%228a580c16-a6bd-4f1f-9225-9f4db4e3d374%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%222%22+tnOrder%3a%226e0608d0-a941-42da-9ad0-a7d63f1ad846%22&form=HPNN01
+                  - generic [ref=e240]:
+                    - 'heading "Mumbai rains: ''Stuck plastic'' halts Central Line services, Western Railway cancels several trains" [level=2] [ref=e241]':
+                      - generic [ref=e242]: "Mumbai rains: 'Stuck plastic' halts Central Line services, Western Railway cancels several trains"
+                    - img "© Copyright (C) news18.com. All Rights Reserved." [ref=e243]
+                    - link "Read Article":
+                      - /url: https://www.msn.com/en-in/news/India/mumbai-rains-stuck-plastic-halts-central-line-services-western-railway-cancels-several-trains/ar-AA27iIG7?ocid=TobArticle
+                      - img [ref=e244]
+              - listitem [ref=e247] [cursor=pointer]:
+                - 'link "''Restraining order needed'': Trump reignites feud with Meloni after G7 picture row © Hindustan Times" [ref=e248]':
+                  - /url: /search?q=%27Restraining+order+needed%27%3a+Trump+reignites+feud+with+Meloni+after+G7+picture+row&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_C9D9A781BED9008AF297AFBE377458C6%22+tnVersion%3a%228a580c16-a6bd-4f1f-9225-9f4db4e3d374%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%223%22+tnOrder%3a%226e0608d0-a941-42da-9ad0-a7d63f1ad846%22&form=HPNN01
+                  - generic [ref=e249]:
+                    - 'heading "''Restraining order needed'': Trump reignites feud with Meloni after G7 picture row" [level=2] [ref=e250]':
+                      - generic [ref=e251]: "'Restraining order needed': Trump reignites feud with Meloni after G7 picture row"
+                    - img "© Hindustan Times" [ref=e252]
+                    - link "Read Article":
+                      - /url: https://www.msn.com/en-in/news/world/restraining-order-needed-trump-reignites-feud-with-meloni-after-g7-picture-row/ar-AA27hT1n?ocid=TobArticle
+                      - img [ref=e253]
+              - listitem [ref=e256] [cursor=pointer]:
+                - link "What is the age gap between newly married Aamir Khan and Gauri Spratt? © The Daily Jagran" [ref=e257]:
+                  - /url: /search?q=What+is+the+age+gap+between+newly+married+Aamir+Khan+and+Gauri+Spratt%3f&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_D56A2235BFF85C421C299677B795DA95%22+tnVersion%3a%228a580c16-a6bd-4f1f-9225-9f4db4e3d374%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%224%22+tnOrder%3a%226e0608d0-a941-42da-9ad0-a7d63f1ad846%22&form=HPNN01
+                  - generic [ref=e258]:
+                    - heading "What is the age gap between newly married Aamir Khan and Gauri Spratt?" [level=2] [ref=e259]:
+                      - generic [ref=e260]: What is the age gap between newly married Aamir Khan and Gauri Spratt?
+                    - img "© The Daily Jagran" [ref=e261]
+                    - link "Read Article":
+                      - /url: https://www.msn.com/en-in/entertainment/bollywood/what-is-the-age-gap-between-newly-married-aamir-khan-and-gauri-spratt/ar-AA27h9Y2?ocid=TobArticle
+                      - img [ref=e262]
+              - listitem [ref=e265] [cursor=pointer]:
+                - link "Mumbai-Pune Expressway's 'missing link' shut 2 months after inauguration due to rain-triggered landslide © Times Now" [ref=e266]:
+                  - /url: /search?q=Mumbai-Pune+Expressway%27s+%27missing+link%27+shut+2+months+after+inauguration+due+to+rain-triggered+landslide&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_4D3402577C7FAEFF4C2963F3077CD6DD%22+tnVersion%3a%228a580c16-a6bd-4f1f-9225-9f4db4e3d374%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%225%22+tnOrder%3a%226e0608d0-a941-42da-9ad0-a7d63f1ad846%22&form=HPNN01
+                  - generic [ref=e267]:
+                    - heading "Mumbai-Pune Expressway's 'missing link' shut 2 months after inauguration due to rain-triggered landslide" [level=2] [ref=e268]:
+                      - generic [ref=e269]: Mumbai-Pune Expressway's 'missing link' shut 2 months after inauguration due to rain-triggered landslide
+                    - img "© Times Now" [ref=e270]
+                    - link "Read Article":
+                      - /url: https://www.msn.com/en-in/news/India/mumbai-pune-expressway-s-missing-link-shut-2-months-after-inauguration-due-to-rain-triggered-landslide/ar-AA27ifQC?ocid=TobArticle
+                      - img [ref=e271]
+              - listitem [ref=e274] [cursor=pointer]:
+                - 'link "Erasing Dravidian model: DMK slams TVK over removal of Stalin''s name from desalination project plaque © The New Indian Express" [ref=e275]':
+                  - /url: /search?q=Erasing+Dravidian+model%3a+DMK+slams+TVK+over+removal+of+Stalin%27s+name+from+desalination+project+plaque&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_610FDF216E983C4FF17B08E0C3FDB04D%22+tnVersion%3a%228a580c16-a6bd-4f1f-9225-9f4db4e3d374%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%226%22+tnOrder%3a%226e0608d0-a941-42da-9ad0-a7d63f1ad846%22&form=HPNN01
+                  - generic [ref=e276]:
+                    - 'heading "Erasing Dravidian model: DMK slams TVK over removal of Stalin''s name from desalination project plaque" [level=2] [ref=e277]':
+                      - generic [ref=e278]: "Erasing Dravidian model: DMK slams TVK over removal of Stalin's name from desalination project plaque"
+                    - img "© The New Indian Express" [ref=e279]
+                    - link "Read Article":
+                      - /url: https://www.msn.com/en-in/news/India/erasing-dravidian-model-dmk-slams-tvk-over-removal-of-stalin-s-name-from-desalination-project-plaque/ar-AA27ijoS?ocid=TobArticle
+                      - img [ref=e280]
+              - listitem [ref=e283] [cursor=pointer]:
+                - 'link "Mumbai rain mayhem: Half-day for govt offices; private companies asked to allow work from home © News18" [ref=e284]':
+                  - /url: /search?q=Mumbai+rain+mayhem%3a+Half-day+for+govt+offices%3b+private+companies+asked+to+allow+work+from+home&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_91EB8D4D75590BB91E42AE8966AD3195%22+tnVersion%3a%228a580c16-a6bd-4f1f-9225-9f4db4e3d374%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%227%22+tnOrder%3a%226e0608d0-a941-42da-9ad0-a7d63f1ad846%22&form=HPNN01
+                  - generic [ref=e285]:
+                    - 'heading "Mumbai rain mayhem: Half-day for govt offices; private companies asked to allow work from home" [level=2] [ref=e286]':
+                      - generic [ref=e287]: "Mumbai rain mayhem: Half-day for govt offices; private companies asked to allow work from home"
+                    - img "© News18" [ref=e288]
+                    - link "Read Article":
+                      - /url: https://www.msn.com/en-in/news/India/mumbai-rain-mayhem-half-day-for-govt-offices-private-companies-asked-to-allow-work-from-home/ar-AA27iDaM?ocid=TobArticle
+                      - img [ref=e289]
+              - listitem [ref=e292] [cursor=pointer]:
+                - link "Brazil's World Cup exit leaves Kerala fans in tears © The Economic Times" [ref=e293]:
+                  - /url: /search?q=Brazil%27s+World+Cup+exit+leaves+Kerala+fans+in+tears&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_558CB783399BEF3F02B59019EC0EDA7C%22+tnVersion%3a%228a580c16-a6bd-4f1f-9225-9f4db4e3d374%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%228%22+tnOrder%3a%226e0608d0-a941-42da-9ad0-a7d63f1ad846%22&form=HPNN01
+                  - generic [ref=e294]:
+                    - heading "Brazil's World Cup exit leaves Kerala fans in tears" [level=2] [ref=e295]:
+                      - generic [ref=e296]: Brazil's World Cup exit leaves Kerala fans in tears
+                    - img "© The Economic Times" [ref=e297]
+                    - link "Read Article":
+                      - /url: https://www.msn.com/en-in/sports/fifa_world_cup/brazil-s-world-cup-exit-leaves-kerala-fans-in-tears/ar-AA27igNR?ocid=TobArticle
+                      - img [ref=e298]
+              - listitem [ref=e301] [cursor=pointer]:
+                - 'link "Kailash Mansarovar Yatra 2026 expectations vs reality: Viral video reveals the harsh reality pilgrims must be prepared for © Times Now" [ref=e302]':
+                  - /url: /search?q=Kailash+Mansarovar+Yatra+2026+expectations+vs+reality%3a+Viral+video+reveals+the+harsh+reality+pilgrims+must+be+prepared+for&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_97A8B2832DBEBB5B8F37055D374FA055%22+tnVersion%3a%228a580c16-a6bd-4f1f-9225-9f4db4e3d374%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%229%22+tnOrder%3a%226e0608d0-a941-42da-9ad0-a7d63f1ad846%22&form=HPNN01
+                  - generic [ref=e303]:
+                    - 'heading "Kailash Mansarovar Yatra 2026 expectations vs reality: Viral video reveals the harsh reality pilgrims must be prepared for" [level=2] [ref=e304]':
+                      - generic [ref=e305]: "Kailash Mansarovar Yatra 2026 expectations vs reality: Viral video reveals the harsh reality pilgrims must be prepared for"
+                    - img "© Times Now" [ref=e306]
+                    - link "Read Article":
+                      - /url: https://www.msn.com/en-in/travel/news/kailash-mansarovar-yatra-2026-expectations-vs-reality-viral-video-reveals-the-harsh-reality-pilgrims-must-be-prepared-for/ar-AA27hLHt?ocid=TobArticle
+                      - img [ref=e307]
+              - listitem [ref=e310] [cursor=pointer]:
+                - 'link "Watch: Sri Lanka cricketer collapses while batting, dies during live-streamed match in Beruwala © The Daily Jagran" [ref=e311]':
+                  - /url: /search?q=Watch%3a+Sri+Lanka+cricketer+collapses+while+batting%2c+dies+during+live-streamed+match+in+Beruwala&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_A01F678B3D1B9786963547A877CCD794%22+tnVersion%3a%228a580c16-a6bd-4f1f-9225-9f4db4e3d374%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%2210%22+tnOrder%3a%226e0608d0-a941-42da-9ad0-a7d63f1ad846%22&form=HPNN01
+                  - generic [ref=e312]:
+                    - 'heading "Watch: Sri Lanka cricketer collapses while batting, dies during live-streamed match in Beruwala" [level=2] [ref=e313]':
+                      - generic [ref=e314]: "Watch: Sri Lanka cricketer collapses while batting, dies during live-streamed match in Beruwala"
+                    - img "© The Daily Jagran" [ref=e315]
+                    - link "Read Article":
+                      - /url: https://www.msn.com/en-in/sports/cricket/watch-sri-lanka-cricketer-collapses-while-batting-dies-during-live-streamed-match-in-beruwala/ar-AA27im2c?ocid=TobArticle
+                      - img [ref=e316]
+              - listitem [ref=e319] [cursor=pointer]:
+                - 'link "Anshula Kapoor-Rohan Thakkar wedding: Venue, cocktail party, guest list, key details here © ABP - Live" [ref=e320]':
+                  - /url: /search?q=Anshula+Kapoor-Rohan+Thakkar+wedding%3a+Venue%2c+cocktail+party%2c+guest+list%2c+key+details+here&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_F7B41664383471F0FB379AF91A5B61FB%22+tnVersion%3a%228a580c16-a6bd-4f1f-9225-9f4db4e3d374%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%2211%22+tnOrder%3a%226e0608d0-a941-42da-9ad0-a7d63f1ad846%22&form=HPNN01
+                  - generic [ref=e321]:
+                    - 'heading "Anshula Kapoor-Rohan Thakkar wedding: Venue, cocktail party, guest list, key details here" [level=2] [ref=e322]':
+                      - generic [ref=e323]: "Anshula Kapoor-Rohan Thakkar wedding: Venue, cocktail party, guest list, key details here"
+                    - img "© ABP - Live" [ref=e324]
+                    - link "Read Article":
+                      - /url: https://www.msn.com/en-in/autos/photos/anshula-kapoor-rohan-thakkar-wedding-venue-cocktail-party-guest-list-key-details-here/ar-AA27iy6F?ocid=TobArticle
+                      - img [ref=e325]
+              - listitem [ref=e328] [cursor=pointer]:
+                - 'link "Ram temple donation theft: Accused Anukalp Mishra planned to seal Rs 2 crore land deal with stolen funds © The Daily Jagran" [ref=e329]':
+                  - /url: /search?q=Ram+temple+donation+theft%3a+Accused+Anukalp+Mishra+planned+to+seal+Rs+2+crore+land+deal+with+stolen+funds&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_6837273262DF00AC9DF26B7A82EEFCCA%22+tnVersion%3a%228a580c16-a6bd-4f1f-9225-9f4db4e3d374%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%2212%22+tnOrder%3a%226e0608d0-a941-42da-9ad0-a7d63f1ad846%22&form=HPNN01
+                  - generic [ref=e330]:
+                    - 'heading "Ram temple donation theft: Accused Anukalp Mishra planned to seal Rs 2 crore land deal with stolen funds" [level=2] [ref=e331]':
+                      - generic [ref=e332]: "Ram temple donation theft: Accused Anukalp Mishra planned to seal Rs 2 crore land deal with stolen funds"
+                    - img "© The Daily Jagran" [ref=e333]
+                    - link "Read Article":
+                      - /url: https://www.msn.com/en-in/news/India/ram-temple-donation-theft-accused-anukalp-mishra-planned-to-seal-rs-2-crore-land-deal-with-stolen-funds/ar-AA27iyhl?ocid=TobArticle
+                      - img [ref=e334]
+              - listitem [ref=e337] [cursor=pointer]:
+                - link "Husband of newlywed Delhi woman, who was found dead, arrested in dowry case © NDTV 24x7" [ref=e338]:
+                  - /url: /search?q=Husband+of+newlywed+Delhi+woman%2c+who+was+found+dead%2c+arrested+in+dowry+case&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_092C5C2E5FF80BECF47DD88E11A2D7BA%22+tnVersion%3a%228a580c16-a6bd-4f1f-9225-9f4db4e3d374%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%2213%22+tnOrder%3a%226e0608d0-a941-42da-9ad0-a7d63f1ad846%22&form=HPNN01
+                  - generic [ref=e339]:
+                    - heading "Husband of newlywed Delhi woman, who was found dead, arrested in dowry case" [level=2] [ref=e340]:
+                      - generic [ref=e341]: Husband of newlywed Delhi woman, who was found dead, arrested in dowry case
+                    - img "© NDTV 24x7" [ref=e342]
+                    - link "Read Article":
+                      - /url: https://www.msn.com/en-in/news/India/husband-of-newlywed-delhi-woman-who-was-found-dead-arrested-in-dowry-case/ar-AA27igc7?ocid=TobArticle
+                      - img [ref=e343]
+              - listitem [ref=e346] [cursor=pointer]:
+                - 'link "''Tremendous support in India'': Netanyahu denies US being Israel''s only ally, counters JD Vance © Hindustan Times" [ref=e347]':
+                  - /url: /search?q=%27Tremendous+support+in+India%27%3a+Netanyahu+denies+US+being+Israel%27s+only+ally%2c+counters+JD+Vance&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_0B93B1D7616C4924754E5864742DDDAA%22+tnVersion%3a%228a580c16-a6bd-4f1f-9225-9f4db4e3d374%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%2214%22+tnOrder%3a%226e0608d0-a941-42da-9ad0-a7d63f1ad846%22&form=HPNN01
+                  - generic [ref=e348]:
+                    - 'heading "''Tremendous support in India'': Netanyahu denies US being Israel''s only ally, counters JD Vance" [level=2] [ref=e349]':
+                      - generic [ref=e350]: "'Tremendous support in India': Netanyahu denies US being Israel's only ally, counters JD Vance"
+                    - img "© Hindustan Times" [ref=e351]
+                    - link "Read Article":
+                      - /url: https://www.msn.com/en-in/news/India/tremendous-support-in-india-netanyahu-denies-us-being-israel-s-only-ally-counters-jd-vance/ar-AA27h1SG?ocid=TobArticle
+                      - img [ref=e352]
+              - listitem [ref=e355] [cursor=pointer]:
+                - link "Don’t read too much into Bangladesh PM’s China visit © Hindustan Times" [ref=e356]:
+                  - /url: /search?q=Don%e2%80%99t+read+too+much+into+Bangladesh+PM%e2%80%99s+China+visit&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_B663669A6813EE62EF87064E29391840%22+tnVersion%3a%228a580c16-a6bd-4f1f-9225-9f4db4e3d374%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%2215%22+tnOrder%3a%226e0608d0-a941-42da-9ad0-a7d63f1ad846%22&form=HPNN01
+                  - generic [ref=e357]:
+                    - heading "Don’t read too much into Bangladesh PM’s China visit" [level=2] [ref=e358]:
+                      - generic [ref=e359]: Don’t read too much into Bangladesh PM’s China visit
+                    - img "© Hindustan Times" [ref=e360]
+                    - link "Read Article":
+                      - /url: https://www.msn.com/en-in/news/India/don-t-read-too-much-into-bangladesh-pm-s-china-visit/ar-AA27hNe1?ocid=TobArticle
+                      - img [ref=e361]
+              - listitem [ref=e364] [cursor=pointer]:
+                - 'link "Apple''s foldable iPhone could be hardest iPhone to buy at launch: Report © Firstpost" [ref=e365]':
+                  - /url: /search?q=Apple%27s+foldable+iPhone+could+be+hardest+iPhone+to+buy+at+launch%3a+Report&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_733579EDCD2A8DD0363A16250B4C4E10%22+tnVersion%3a%228a580c16-a6bd-4f1f-9225-9f4db4e3d374%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%2216%22+tnOrder%3a%226e0608d0-a941-42da-9ad0-a7d63f1ad846%22&form=HPNN01
+                  - generic [ref=e366]:
+                    - 'heading "Apple''s foldable iPhone could be hardest iPhone to buy at launch: Report" [level=2] [ref=e367]':
+                      - generic [ref=e368]: "Apple's foldable iPhone could be hardest iPhone to buy at launch: Report"
+                    - img "© Firstpost" [ref=e369]
+                    - link "Read Article":
+                      - /url: https://www.msn.com/en-in/lifestyle/shopping/apple-s-foldable-iphone-could-be-hardest-iphone-to-buy-at-launch-report/ar-AA27hgxh?ocid=TobArticle
+                      - img [ref=e370]
+              - listitem [ref=e373] [cursor=pointer]:
+                - link "3 months after marriage, newlywed shot dead by husband in Gurugram © News9 Live" [ref=e374]:
+                  - /url: /search?q=3+months+after+marriage%2c+newlywed+shot+dead+by+husband+in+Gurugram&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_B385BFAF6DA34BF18D86330295C43965%22+tnVersion%3a%228a580c16-a6bd-4f1f-9225-9f4db4e3d374%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%2217%22+tnOrder%3a%226e0608d0-a941-42da-9ad0-a7d63f1ad846%22&form=HPNN01
+                  - generic [ref=e375]:
+                    - heading "3 months after marriage, newlywed shot dead by husband in Gurugram" [level=2] [ref=e376]:
+                      - generic [ref=e377]: 3 months after marriage, newlywed shot dead by husband in Gurugram
+                    - img "© News9 Live" [ref=e378]
+                    - link "Read Article":
+                      - /url: https://www.msn.com/en-in/lifestyle/relationships/3-months-after-marriage-newlywed-shot-dead-by-husband-in-gurugram/ar-AA27hKnj?ocid=TobArticle
+                      - img [ref=e379]
+              - listitem [ref=e382] [cursor=pointer]:
+                - link "Harry Kane creates FIFA World Cup history, becomes first player since 1966 to... © News18" [ref=e383]:
+                  - /url: /search?q=Harry+Kane+creates+FIFA+World+Cup+history%2c+becomes+first+player+since+1966+to...&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_E12086FF7A4A5E276B72A6CAFEEE26D6%22+tnVersion%3a%228a580c16-a6bd-4f1f-9225-9f4db4e3d374%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%2218%22+tnOrder%3a%226e0608d0-a941-42da-9ad0-a7d63f1ad846%22&form=HPNN01
+                  - generic [ref=e384]:
+                    - heading "Harry Kane creates FIFA World Cup history, becomes first player since 1966 to..." [level=2] [ref=e385]:
+                      - generic [ref=e386]: Harry Kane creates FIFA World Cup history, becomes first player since 1966 to...
+                    - img "© News18" [ref=e387]
+                    - link "Read Article":
+                      - /url: https://www.msn.com/en-in/sports/other/harry-kane-creates-fifa-world-cup-history-becomes-first-player-since-1966-to/ar-AA27iiPQ?ocid=TobArticle
+                      - img [ref=e388]
+              - listitem [ref=e391] [cursor=pointer]:
+                - link "Erling Haaland’s social media post after Brazil vs Norway breaks the internet; fans react, 'You are truly a monster' © Live Mint" [ref=e392]:
+                  - /url: /search?q=Erling+Haaland%e2%80%99s+social+media+post+after+Brazil+vs+Norway+breaks+the+internet%3b+fans+react%2c+%27You+are+truly+a+monster%27&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_D9D32AF1E6E736D5B65EE284296E31A0%22+tnVersion%3a%228a580c16-a6bd-4f1f-9225-9f4db4e3d374%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%2219%22+tnOrder%3a%226e0608d0-a941-42da-9ad0-a7d63f1ad846%22&form=HPNN01
+                  - generic [ref=e393]:
+                    - heading "Erling Haaland’s social media post after Brazil vs Norway breaks the internet; fans react, 'You are truly a monster'" [level=2] [ref=e394]:
+                      - generic [ref=e395]: Erling Haaland’s social media post after Brazil vs Norway breaks the internet; fans react, 'You are truly a monster'
+                    - img "© Live Mint" [ref=e396]
+                    - link "Read Article":
+                      - /url: https://www.msn.com/en-in/lifestyle/smart-living/erling-haaland-s-social-media-post-after-brazil-vs-norway-breaks-the-internet-fans-react-you-are-truly-a-monster/ar-AA27hmCk?ocid=TobArticle
+                      - img [ref=e397]
+      - complementary [ref=e400]:
+        - generic [ref=e402]:
+          - generic [ref=e403]: DISCOVER
+          - main [ref=e410]:
+            - generic [ref=e412]:
+              - generic [ref=e413]:
+                - generic [ref=e416]:
+                  - tablist [ref=e418]:
+                    - tab [ref=e419] [cursor=pointer]
+                    - tab [ref=e421] [cursor=pointer]
+                    - tab [selected] [ref=e423] [cursor=pointer]
+                    - tab [ref=e425] [cursor=pointer]
+                    - tab [ref=e427] [cursor=pointer]
+                    - tab [ref=e429] [cursor=pointer]
+                    - tab [ref=e431] [cursor=pointer]
+                    - tab [ref=e433] [cursor=pointer]
+                    - tab [ref=e435] [cursor=pointer]
+                    - tab [ref=e437] [cursor=pointer]
+                    - tab [ref=e439] [cursor=pointer]
+                    - tab [ref=e441] [cursor=pointer]
+                    - tab [ref=e443] [cursor=pointer]
+                    - tab [ref=e445] [cursor=pointer]
+                  - button [ref=e449]
+                  - button [ref=e452]
+                  - 'article "Vithabai Narayangaonkar''s daughter breaks silence on Shraddha Kapoor''s Eetha title row: ''We have no objection''" [ref=e453] [cursor=pointer]':
+                    - generic [ref=e455]:
+                      - img [ref=e456]
+                      - generic [ref=e457]:
+                        - generic [ref=e458]:
+                          - generic [ref=e459]:
+                            - generic [ref=e460]:
+                              - img [ref=e461]
+                              - generic [ref=e462]: Moneycontrol
+                            - generic [ref=e463]: ·
+                            - generic [ref=e464]: 3d
+                          - 'link "Vithabai Narayangaonkar''s daughter breaks silence on Shraddha Kapoor''s Eetha title row: ''We have no objection'', Moneycontrol" [ref=e465]':
+                            - /url: https://www.msn.com/en-in/money/topstories/vithabai-narayangaonkar-s-daughter-breaks-silence-on-shraddha-kapoor-s-eetha-title-row-we-have-no-objection/ar-AA277DBL
+                            - text: "Vithabai Narayangaonkar's daughter breaks silence on Shraddha Kapoor's Eetha title row: 'We have no objection'"
+                        - 'generic "Vithabai Narayangaonkar''s daughter breaks silence on Shraddha Kapoor''s Eetha title row: ''We have no objection''" [ref=e469]':
+                          - generic [ref=e471]:
+                            - generic [ref=e472]:
+                              - button "132 Likes" [ref=e473]:
+                                - generic [ref=e474]:
+                                  - img [ref=e475]
+                                  - generic [ref=e477]: "132"
+                              - button "Dislike" [ref=e478]:
+                                - img [ref=e480]
+                            - link "Start the conversation" [ref=e483]:
+                              - /url: https://www.msn.com/en-in/money/topstories/vithabai-narayangaonkar-s-daughter-breaks-silence-on-shraddha-kapoor-s-eetha-title-row-we-have-no-objection/ar-AA277DBL#comments
+                              - button "Start the conversation" [ref=e484]:
+                                - img [ref=e485]
+                      - generic [ref=e487]:
+                        - button "Hide this story" [ref=e488]:
+                          - img [ref=e489]
+                          - text: Hide this story
+                        - button "See more" [ref=e490]:
+                          - img [ref=e491]
+                - 'article "Breaking: Pune road splits open after burst water pipeline, dramatic CCTV captures shocking collapse" [ref=e492] [cursor=pointer]':
+                  - generic [ref=e494]:
+                    - generic [ref=e500]:
+                      - generic [ref=e501]:
+                        - generic [ref=e502]:
+                          - generic [ref=e503]:
+                            - img [ref=e504]
+                            - generic [ref=e505]: ABP - Live
+                          - generic [ref=e506]: ·
+                          - generic [ref=e507]: 20h
+                        - 'link "Breaking: Pune road splits open after burst water pipeline, dramatic CCTV captures shocking collapse, ABP - Live" [ref=e508]':
+                          - /url: https://www.msn.com/en-in/news/india/breaking-pune-road-splits-open-after-burst-water-pipeline-dramatic-cctv-captures-shocking-collapse/vi-AA27evjY
+                          - text: "Breaking: Pune road splits open after burst water pipeline, dramatic CCTV captures shocking collapse"
+                      - 'generic "Breaking: Pune road splits open after burst water pipeline, dramatic CCTV captures shocking collapse" [ref=e512]':
+                        - generic [ref=e514]:
+                          - generic [ref=e515]:
+                            - button "81 Likes" [ref=e516]:
+                              - generic [ref=e517]:
+                                - img [ref=e518]
+                                - generic [ref=e520]: "81"
+                            - button "Dislike" [ref=e521]:
+                              - img [ref=e523]
+                          - link "View comments 2 Comment" [ref=e526]:
+                            - /url: https://www.msn.com/en-in/news/india/breaking-pune-road-splits-open-after-burst-water-pipeline-dramatic-cctv-captures-shocking-collapse/vi-AA27evjY#comments
+                            - button "View comments 2 Comment" [ref=e527]:
+                              - img [ref=e528]
+                            - generic [ref=e530]: "2"
+                    - generic [ref=e531]:
+                      - button "Hide this story" [ref=e532]:
+                        - img [ref=e533]
+                        - text: Hide this story
+                      - button "See more" [ref=e534]:
+                        - img [ref=e535]
+                - article [ref=e536] [cursor=pointer]:
+                  - generic [ref=e542]:
+                    - generic [ref=e544]:
+                      - img "World Cup coverage" [ref=e546]
+                      - link "World Cup coverage" [ref=e547]:
+                        - /url: https://www.msn.com/en-in/sports/football/fifa_world_cup?uxmode=ruby&ocid=BingHp01&cvid=3448086cbbc9472ac0047850aaceff09
+                        - heading "World Cup coverage" [level=2] [ref=e548]
+                      - button "More interests" [ref=e549]
+                      - generic [ref=e550]:
+                        - generic "Trending now" [ref=e551]:
+                          - button "Trending now" [ref=e552]
+                        - button "More options" [ref=e553]
+                    - generic [ref=e557]:
+                      - link "Mexico Final · 6 Jul 2 - 3 England" [ref=e559]:
+                        - /url: https://www.msn.com/en-in/sports/football/fifa_world_cup/game-center/sp-id-53452519?uxmode=ruby&ocid=BingHp01&cvid=3448086cbbc9472ac0047850aaceff09
+                        - generic [ref=e560]:
+                          - generic [ref=e561]:
+                            - generic [ref=e562]:
+                              - button "Click to follow Mexico":
+                                - generic:
+                                  - img
+                            - generic "Mexico" [ref=e563]
+                          - generic [ref=e565]:
+                            - generic "6 Jul - Final" [ref=e566]: Final · 6 Jul
+                            - generic [ref=e567]:
+                              - generic [ref=e569]: "2"
+                              - generic [ref=e570]: "-"
+                              - generic [ref=e571]:
+                                - generic [ref=e572]: "3"
+                                - img [ref=e574]
+                          - generic [ref=e576]:
+                            - generic [ref=e577]:
+                              - button "Click to follow England":
+                                - generic:
+                                  - img
+                            - generic "England" [ref=e578]
+                      - link "Brazil Final · 6 Jul 1 - 2 Norway" [ref=e580]:
+                        - /url: https://www.msn.com/en-in/sports/football/fifa_world_cup/game-center/sp-id-53452517?uxmode=ruby&ocid=BingHp01&cvid=3448086cbbc9472ac0047850aaceff09
+                        - generic [ref=e581]:
+                          - generic [ref=e582]:
+                            - generic [ref=e583]:
+                              - button "Click to follow Brazil":
+                                - generic:
+                                  - img
+                            - generic "Brazil" [ref=e584]
+                          - generic [ref=e586]:
+                            - generic "6 Jul - Final" [ref=e587]: Final · 6 Jul
+                            - generic [ref=e588]:
+                              - generic [ref=e590]: "1"
+                              - generic [ref=e591]: "-"
+                              - generic [ref=e592]:
+                                - generic [ref=e593]: "2"
+                                - img [ref=e595]
+                          - generic [ref=e597]:
+                            - generic [ref=e598]:
+                              - button "Click to follow Norway":
+                                - generic:
+                                  - img
+                            - generic "Norway" [ref=e599]
+                      - link "Portugal 12:30 am 7 Jul - FOX US Spain" [ref=e601]:
+                        - /url: https://www.msn.com/en-in/sports/football/fifa_world_cup/game-center/sp-id-53452513?uxmode=ruby&ocid=BingHp01&cvid=3448086cbbc9472ac0047850aaceff09
+                        - generic [ref=e602]:
+                          - generic [ref=e603]:
+                            - generic [ref=e604]:
+                              - button "Click to follow Portugal":
+                                - generic:
+                                  - img
+                            - generic "Portugal" [ref=e605]
+                          - generic [ref=e607]:
+                            - generic "12:30 am" [ref=e608]:
+                              - generic [ref=e609]: 12:30 am
+                            - generic "7 Jul - FOX US" [ref=e610]
+                          - generic [ref=e611]:
+                            - generic [ref=e612]:
+                              - button "Click to follow Spain":
+                                - generic:
+                                  - img
+                            - generic "Spain" [ref=e613]
+                    - generic [ref=e615]:
+                      - generic [ref=e616]:
+                        - generic "Previous" [ref=e617]:
+                          - button "Previous" [ref=e618]
+                        - tablist [ref=e620]:
+                          - tab "tab-0" [selected] [ref=e621]
+                          - tab "tab-1" [ref=e623]
+                          - tab "tab-2" [ref=e625]
+                          - tab "tab-3" [ref=e627]
+                          - tab "tab-4" [ref=e629]
+                          - tab "tab-5"
+                          - tab "tab-6"
+                          - tab "tab-7"
+                          - tab "tab-8"
+                          - tab "tab-9"
+                          - tab "tab-10"
+                          - tab "tab-11"
+                        - generic "Next" [ref=e631]:
+                          - button "Next" [ref=e632]
+                      - link "See more World Cup coverage" [ref=e634]:
+                        - /url: https://www.msn.com/en-in/sports/football/fifa_world_cup?uxmode=ruby&ocid=BingHp01&cvid=3448086cbbc9472ac0047850aaceff09
+                - article [ref=e635] [cursor=pointer]:
+                  - generic [ref=e640]:
+                    - generic [ref=e642]:
+                      - link "Top stories" [ref=e644]:
+                        - /url: https://www.msn.com/en-in/channel/topic/Top%20stories/tp-Y_0b495ad3-9beb-45f8-9214-c8e95aa2468f?cvid=3448086cbbc9472ac0047850aaceff09&ocid=BingHp01
+                        - heading "Top stories" [level=2] [ref=e645]
+                      - button "More options" [ref=e647]
+                    - list [ref=e650]:
+                      - listitem [ref=e651]:
+                        - 'link "WION now Love marriage, office party, fight over salary: Delhi woman dies three months after marriage | Shocking details emerge" [ref=e652]':
+                          - /url: https://www.msn.com/en-in/lifestyle/relationships/love-marriage-office-party-fight-over-salary-delhi-woman-dies-three-months-after-marriage-shocking-details-emerge/ar-AA27iiXk
+                          - generic [ref=e653]:
+                            - generic [ref=e654]:
+                              - img [ref=e655]
+                              - generic [ref=e656]:
+                                - generic: WION ·now
+                            - generic [ref=e657]: "Love marriage, office party, fight over salary: Delhi woman dies three months after marriage | Shocking details emerge"
+                      - listitem [ref=e658]:
+                        - link "News18 28m NIA charges Hafiz Saeed in Pahalgam terror attack case, files supplementary chargesheet" [ref=e659]:
+                          - /url: https://www.msn.com/en-in/news/india/nia-charges-hafiz-saeed-in-pahalgam-terror-attack-case-files-supplementary-chargesheet/ar-AA27j3W9
+                          - generic [ref=e660]:
+                            - generic [ref=e661]:
+                              - img [ref=e662]
+                              - generic [ref=e663]:
+                                - generic: News18 ·28m
+                            - generic [ref=e664]: NIA charges Hafiz Saeed in Pahalgam terror attack case, files supplementary chargesheet
+                      - listitem [ref=e665]:
+                        - 'link "The Times of India 41m Potholes, now a landslide: Rs 6,695-crore Mumbai-Pune expressway link could not survive one monsoon" [ref=e666]':
+                          - /url: https://www.msn.com/en-in/news/india/potholes-now-a-landslide-rs-6-695-crore-mumbai-pune-expressway-link-could-not-survive-one-monsoon/ar-AA27iA6p
+                          - generic [ref=e667]:
+                            - generic [ref=e668]:
+                              - img [ref=e669]
+                              - generic [ref=e670]:
+                                - generic: The Times of India ·41m
+                            - generic [ref=e671]: "Potholes, now a landslide: Rs 6,695-crore Mumbai-Pune expressway link could not survive one monsoon"
+                    - generic [ref=e673]:
+                      - generic [ref=e674]:
+                        - generic "Previous" [ref=e675]:
+                          - button "Previous" [ref=e676]
+                        - tablist [ref=e678]:
+                          - tab "tab-0" [selected] [ref=e679]
+                          - tab "tab-1" [ref=e681]
+                          - tab "tab-2" [ref=e683]
+                        - generic "Next" [ref=e685]:
+                          - button "Next" [ref=e686]
+                      - link "See more" [ref=e688]:
+                        - /url: https://www.msn.com/en-in/channel/topic/Top%20stories/tp-Y_0b495ad3-9beb-45f8-9214-c8e95aa2468f?cvid=3448086cbbc9472ac0047850aaceff09&ocid=BingHp01
+                - article "Best Public Speaking Course for Children (Age 4-14)" [ref=e689] [cursor=pointer]:
+                  - generic [ref=e691]:
+                    - img [ref=e692]
+                    - generic [ref=e693]:
+                      - generic [ref=e694]:
+                        - generic [ref=e697]: PlanetSpark
+                        - link "Best Public Speaking Course for Children (Age 4-14), PlanetSpark" [ref=e698]:
+                          - /url: https://msft-ssp-apac.adnxs.com/click2?e=wqT_3QKjAfBDowAAAAMAxBkFAQjl963SBhDZzOKGs7Dm_0AYh4DHxZD77uAYIIyC7g0omAIwmjw4jwNAi_i2vAJI8opOUABaA1VTRGIBBZBoAXABeJmgZ4ABk5cGiAEBkAEAmAEFoAECqQFjXkccsoGEP7EBEQoouQEAAACgmZmpP8EVHgDJFQo82AGOvQLgAQDwAYrPAvgBAA../s=2b593dcee03d65e0c6e22c0b402f3d860c2b9cbb/bcr=AAAAAAAA8D8=/pp=0.01/bn=101267/clickenc=https%3A%2F%2Fpaid.outbrain.com%2Fnetwork%2Fredir%3Fp%3D8lWbqz2F6SGW6RGtHMX2hUZoQvx1uNL306-txo1NzTKabRu_rmKga87sJXfZcqE2OZH3D2X9w8WB4hTWYK0TsIeiE8R0owR0xlsOXkSUaewI1dKZ7D6vVAoBK682xMPDCKKMiM7vC-v078icgP53T2eIqGNY_CF1CGYxhkp8nXoZHnmVKsScEXE4w5HbWI16nBbStjzXB6VIdiLScr22Ex7ryDekGtsdzCwbPAmllLtEVFTc7MEN1bYwNJ8sk5gaH5-wt9h3EM7r4IA6hp35oMRVU2HbbJZ4NSRUpK6W6BuCRAbD6XMj1CoSppW1l_kRB4aiYfM9G6O5zI5rAYszq0h7JCJJ5jF8Z5sFFY0QGSpwKmk3E49HoO8Z--oqySxc4Cn4oShwCWT9Suck9e_0boI8ImDTrt0IPEYCz5CN-NYezn4dF3hf7iPJ-z3l_DGH-Ir3ONMNO3tMJSIpCzx1HKZ5g9x9tr8VorK7UG4mH347JXvMRXdHYptHLQjZzJ84tdmdj1_iDT76lsf3jRYVx8MqB8cKNhrGAOxj-JcQisDNpDC6c_T7YbuWlqbLae1zuALdXtP0pHP3R5KhdAvC1w3ngYKgcwUnZHqQoN_YB5NKlqB6lpk9eDcIXO8CrLihgSNFRDDmpmn6uf_csJKqvx5d4L6rTO0czw_RRYtScXvOJuB7Xl2DT-RC1LslGK7xjA79su62tXawVYtLosdcui8ojQDzxHLKCiVTHadDgl-5QT8r-hFcZd3d97XqLVLEWBd87cP94BdCMhr5EcYRrfWfojPaGwBfRjcFSos4SvXXPcTYWiZ27RDHrVqgzSaV9Kad_UK25NcqN-hhWiKbne8NTO1hI2oC-cO_FL6w_-AxsPA_NlXKae7_IZazyw-MVr8ULXNhpKV_ZJDUHEXDDCjoTwGAOGzfBp6NEhuMP_KHRmjhj3cQjsqNuKLU_bAjGsphrwu8wgsvJRK3cHAqeUhJrGp0WsbOteuImTVvNNOo7_IpSV43OP8a1u57WD73brP0hgXl4i9efU96hYvlK4KFoBDanWxe0Fgh6b214A8PVKSkxOADmV2sG5z_NQFO7_hMR8V5IU91dTq2Q_9tZUTm1ZU6qtCjw9q5JJFnOFwk5L-i-FxF00AL_k-iKBYKGqbg99HjtP5fpzwaza_6Dduzs_VIcLztfdQude1wmFrKrXn8qNWcnBGo2eG1TXPo8N8FjnFsdEYf8WgELPIC9KFpj7i2t5S9EOJujshApLxnUQtqO3pcLPxF1XIiBWiwoA0a4mLDO-65kmCiIniMZ7LAa02rfjjGGDxhmJrlq6PrTKKorajhIZ1gIRxrMLI0Tlrv1qKJqW0GGm4wi5qpcjXEJJpBVW4w2qZG1KrVVfOJab7bGuGM7GixMGPWm8EziTxYrADZ8LhokcVZe8gVaPaCqsSXCtI_A0gmAhJaHIKbePMKBHgpB5zbxAF2NMbb-Wv4e00sRKjaHUisRbit_g5MSZKdzDPiMFLGnl3Lcz3Pvs79YvdUEGQ2gZxF3VZyuz9oPohxH5aTpjPT6Y8UiwIlVrCFCujiOq_VDnkXVj-HCRHL-GfCTU95n5sd89RLBmOICtKFy6TxcLZk-T_l7lkj3XE4p8QhfeL22vBDTA0Mo0CqICH3sX0330KInQ1aT-XXGwNKBKcfZF94KMnfEpxYoiPkmhwxYUJ_mld5INSlqu2aqjVCxaTWfuk6xSRuTDK60kEM2e7B_nKj9tNj2zg1x0TbudEHKBnb0r0pWTNmpBuC6J7yswnYECGnbq7yUHMfPjVAcP0cnChcSG6ejkdcfb7dpZzZoRLgdkFRVF-VdZv5RwSEXoYVARo0I-KYmcvwB-zrG6asgut5rsRhIYvjiW1f5A_YhB2IFgF6vG8CHtksgGnkgExx8HodWndoeh-YuI6UrfbwKsqZUCzDMqGqh4YtrTUp9rpW2uZnO5jldHZ0v30malWXXbbk6dpztktf8Y2LIDDESZQD4lMsCzIsuWaTolh2NyENcGF4Rk_NsykQvkDt2tay4TeLPKLL5aZ6w9NEJKbnauH-2PtR81dtlU37M82BZ0ACJp3M0TGU77_bE06e1JXmBMP_d5GH21-IGd9lsMkjIvh-H2yVSryxZJpxu1Ts-0xzXNHKBDzxKlPRWu67n1ek1PaMrfC5bxvDwZ_QG6UTs8r0LuyZSnmAyqBNlxxK1AaEk-YUJjj8aOeaNyXBA8gSyeSn0sS4%26c%3D767846ad%26v%3D3
+                          - text: Best Public Speaking Course for Children (Age 4-14)
+                      - generic [ref=e699]:
+                        - link "Sponsored" [ref=e700]:
+                          - /url: https://msft-ssp-apac.adnxs.com/click2?e=wqT_3QKjAfBDowAAAAMAxBkFAQjl963SBhDZzOKGs7Dm_0AYh4DHxZD77uAYIIyC7g0omAIwmjw4jwNAi_i2vAJI8opOUABaA1VTRGIBBZBoAXABeJmgZ4ABk5cGiAEBkAEAmAEFoAECqQFjXkccsoGEP7EBEQoouQEAAACgmZmpP8EVHgDJFQo82AGOvQLgAQDwAYrPAvgBAA../s=2b593dcee03d65e0c6e22c0b402f3d860c2b9cbb/bcr=AAAAAAAA8D8=/pp=0.01/bn=101267/clickenc=https%3A%2F%2Fpaid.outbrain.com%2Fnetwork%2Fredir%3Fp%3D8lWbqz2F6SGW6RGtHMX2hUZoQvx1uNL306-txo1NzTKabRu_rmKga87sJXfZcqE2OZH3D2X9w8WB4hTWYK0TsIeiE8R0owR0xlsOXkSUaewI1dKZ7D6vVAoBK682xMPDCKKMiM7vC-v078icgP53T2eIqGNY_CF1CGYxhkp8nXoZHnmVKsScEXE4w5HbWI16nBbStjzXB6VIdiLScr22Ex7ryDekGtsdzCwbPAmllLtEVFTc7MEN1bYwNJ8sk5gaH5-wt9h3EM7r4IA6hp35oMRVU2HbbJZ4NSRUpK6W6BuCRAbD6XMj1CoSppW1l_kRB4aiYfM9G6O5zI5rAYszq0h7JCJJ5jF8Z5sFFY0QGSpwKmk3E49HoO8Z--oqySxc4Cn4oShwCWT9Suck9e_0boI8ImDTrt0IPEYCz5CN-NYezn4dF3hf7iPJ-z3l_DGH-Ir3ONMNO3tMJSIpCzx1HKZ5g9x9tr8VorK7UG4mH347JXvMRXdHYptHLQjZzJ84tdmdj1_iDT76lsf3jRYVx8MqB8cKNhrGAOxj-JcQisDNpDC6c_T7YbuWlqbLae1zuALdXtP0pHP3R5KhdAvC1w3ngYKgcwUnZHqQoN_YB5NKlqB6lpk9eDcIXO8CrLihgSNFRDDmpmn6uf_csJKqvx5d4L6rTO0czw_RRYtScXvOJuB7Xl2DT-RC1LslGK7xjA79su62tXawVYtLosdcui8ojQDzxHLKCiVTHadDgl-5QT8r-hFcZd3d97XqLVLEWBd87cP94BdCMhr5EcYRrfWfojPaGwBfRjcFSos4SvXXPcTYWiZ27RDHrVqgzSaV9Kad_UK25NcqN-hhWiKbne8NTO1hI2oC-cO_FL6w_-AxsPA_NlXKae7_IZazyw-MVr8ULXNhpKV_ZJDUHEXDDCjoTwGAOGzfBp6NEhuMP_KHRmjhj3cQjsqNuKLU_bAjGsphrwu8wgsvJRK3cHAqeUhJrGp0WsbOteuImTVvNNOo7_IpSV43OP8a1u57WD73brP0hgXl4i9efU96hYvlK4KFoBDanWxe0Fgh6b214A8PVKSkxOADmV2sG5z_NQFO7_hMR8V5IU91dTq2Q_9tZUTm1ZU6qtCjw9q5JJFnOFwk5L-i-FxF00AL_k-iKBYKGqbg99HjtP5fpzwaza_6Dduzs_VIcLztfdQude1wmFrKrXn8qNWcnBGo2eG1TXPo8N8FjnFsdEYf8WgELPIC9KFpj7i2t5S9EOJujshApLxnUQtqO3pcLPxF1XIiBWiwoA0a4mLDO-65kmCiIniMZ7LAa02rfjjGGDxhmJrlq6PrTKKorajhIZ1gIRxrMLI0Tlrv1qKJqW0GGm4wi5qpcjXEJJpBVW4w2qZG1KrVVfOJab7bGuGM7GixMGPWm8EziTxYrADZ8LhokcVZe8gVaPaCqsSXCtI_A0gmAhJaHIKbePMKBHgpB5zbxAF2NMbb-Wv4e00sRKjaHUisRbit_g5MSZKdzDPiMFLGnl3Lcz3Pvs79YvdUEGQ2gZxF3VZyuz9oPohxH5aTpjPT6Y8UiwIlVrCFCujiOq_VDnkXVj-HCRHL-GfCTU95n5sd89RLBmOICtKFy6TxcLZk-T_l7lkj3XE4p8QhfeL22vBDTA0Mo0CqICH3sX0330KInQ1aT-XXGwNKBKcfZF94KMnfEpxYoiPkmhwxYUJ_mld5INSlqu2aqjVCxaTWfuk6xSRuTDK60kEM2e7B_nKj9tNj2zg1x0TbudEHKBnb0r0pWTNmpBuC6J7yswnYECGnbq7yUHMfPjVAcP0cnChcSG6ejkdcfb7dpZzZoRLgdkFRVF-VdZv5RwSEXoYVARo0I-KYmcvwB-zrG6asgut5rsRhIYvjiW1f5A_YhB2IFgF6vG8CHtksgGnkgExx8HodWndoeh-YuI6UrfbwKsqZUCzDMqGqh4YtrTUp9rpW2uZnO5jldHZ0v30malWXXbbk6dpztktf8Y2LIDDESZQD4lMsCzIsuWaTolh2NyENcGF4Rk_NsykQvkDt2tay4TeLPKLL5aZ6w9NEJKbnauH-2PtR81dtlU37M82BZ0ACJp3M0TGU77_bE06e1JXmBMP_d5GH21-IGd9lsMkjIvh-H2yVSryxZJpxu1Ts-0xzXNHKBDzxKlPRWu67n1ek1PaMrfC5bxvDwZ_QG6UTs8r0LuyZSnmAyqBNlxxK1AaEk-YUJjj8aOeaNyXBA8gSyeSn0sS4%26c%3D767846ad%26v%3D3
+                        - link "Ad Choice" [ref=e702]:
+                          - /url: https://www.outbrain.com/privacy/privacy-policy-outbrain-dsp/
+                          - img [ref=e703]
+                    - button "See more" [ref=e705]:
+                      - img [ref=e706]
+                - 'article "Frustration turns costly: German player disqualified from Wimbledon for throwing racket into stands" [ref=e707] [cursor=pointer]':
+                  - generic [ref=e709]:
+                    - img [ref=e710]
+                    - generic [ref=e711]:
+                      - generic [ref=e712]:
+                        - generic [ref=e713]:
+                          - generic [ref=e714]:
+                            - img [ref=e715]
+                            - generic [ref=e716]: The Times of India
+                          - generic [ref=e717]: ·
+                          - generic [ref=e718]: 17h
+                        - 'link "Frustration turns costly: German player disqualified from Wimbledon for throwing racket into stands, The Times of India" [ref=e719]':
+                          - /url: https://www.msn.com/en-in/sports/other/frustration-turns-costly-german-player-disqualified-from-wimbledon-for-throwing-racket-into-stands/ar-AA27g8PY
+                          - text: "Frustration turns costly: German player disqualified from Wimbledon for throwing racket into stands"
+                      - 'generic "Frustration turns costly: German player disqualified from Wimbledon for throwing racket into stands" [ref=e723]':
+                        - generic [ref=e725]:
+                          - generic [ref=e726]:
+                            - button "14 Likes" [ref=e727]:
+                              - generic [ref=e728]:
+                                - img [ref=e729]
+                                - generic [ref=e731]: "14"
+                            - button "Dislike" [ref=e732]:
+                              - img [ref=e734]
+                          - link "Start the conversation" [ref=e737]:
+                            - /url: https://www.msn.com/en-in/sports/other/frustration-turns-costly-german-player-disqualified-from-wimbledon-for-throwing-racket-into-stands/ar-AA27g8PY#comments
+                            - button "Start the conversation" [ref=e738]:
+                              - img [ref=e739]
+                    - generic [ref=e741]:
+                      - button "Hide this story" [ref=e742]:
+                        - img [ref=e743]
+                        - text: Hide this story
+                      - button "See more" [ref=e744]:
+                        - img [ref=e745]
+                - 'article "Actor Shafaq Naaz on keeping her marriage to Zeeshan under wraps: We both knew it was high time to spill the beans" [ref=e746] [cursor=pointer]':
+                  - generic [ref=e748]:
+                    - img [ref=e749]
+                    - generic [ref=e750]:
+                      - generic [ref=e751]:
+                        - generic [ref=e752]:
+                          - generic [ref=e753]:
+                            - img [ref=e754]
+                            - generic [ref=e755]: Hindustan Times
+                          - generic [ref=e756]: ·
+                          - generic [ref=e757]: 22h
+                        - 'link "Actor Shafaq Naaz on keeping her marriage to Zeeshan under wraps: We both knew it was high time to spill the beans, Hindustan Times" [ref=e758]':
+                          - /url: https://www.msn.com/en-in/lifestyle/whats-hot/actor-shafaq-naaz-on-keeping-her-marriage-to-zeeshan-under-wraps-we-both-knew-it-was-high-time-to-spill-the-beans/ar-AA27fbte
+                          - text: "Actor Shafaq Naaz on keeping her marriage to Zeeshan under wraps: We both knew it was high time to spill the beans"
+                      - 'generic "Actor Shafaq Naaz on keeping her marriage to Zeeshan under wraps: We both knew it was high time to spill the beans" [ref=e762]':
+                        - generic [ref=e764]:
+                          - generic [ref=e765]:
+                            - button "16 Likes" [ref=e766]:
+                              - generic [ref=e767]:
+                                - img [ref=e768]
+                                - generic [ref=e770]: "16"
+                            - button "Dislike" [ref=e771]:
+                              - img [ref=e773]
+                          - link "Start the conversation" [ref=e776]:
+                            - /url: https://www.msn.com/en-in/lifestyle/whats-hot/actor-shafaq-naaz-on-keeping-her-marriage-to-zeeshan-under-wraps-we-both-knew-it-was-high-time-to-spill-the-beans/ar-AA27fbte#comments
+                            - button "Start the conversation" [ref=e777]:
+                              - img [ref=e778]
+                    - generic [ref=e780]:
+                      - button "Hide this story" [ref=e781]:
+                        - img [ref=e782]
+                        - text: Hide this story
+                      - button "See more" [ref=e783]:
+                        - img [ref=e784]
+                - article "Why archaeologists don’t want to open China’s 2,200-year-old emperor Qin Shi Huang’s tomb; the reason will shock you" [ref=e785] [cursor=pointer]:
+                  - generic [ref=e787]:
+                    - img [ref=e788]
+                    - generic [ref=e789]:
+                      - generic [ref=e790]:
+                        - generic [ref=e792]:
+                          - img [ref=e793]
+                          - generic [ref=e794]: The Times of India
+                        - link "Why archaeologists don’t want to open China’s 2,200-year-old emperor Qin Shi Huang’s tomb; the reason will shock you, The Times of India" [ref=e795]:
+                          - /url: https://www.msn.com/en-in/news/world/why-archaeologists-don-t-want-to-open-china-s-2-200-year-old-emperor-qin-shi-huang-s-tomb-the-reason-will-shock-you/ar-AA1YsMpD
+                          - text: Why archaeologists don’t want to open China’s 2,200-year-old emperor Qin Shi Huang’s tomb; the reason will shock you
+                      - generic "Why archaeologists don’t want to open China’s 2,200-year-old emperor Qin Shi Huang’s tomb; the reason will shock you" [ref=e799]:
+                        - generic [ref=e801]:
+                          - generic [ref=e802]:
+                            - button "207 Likes" [ref=e803]:
+                              - generic [ref=e804]:
+                                - img [ref=e805]
+                                - generic [ref=e807]: "207"
+                            - button "Dislike" [ref=e808]:
+                              - img [ref=e810]
+                          - link "Start the conversation" [ref=e813]:
+                            - /url: https://www.msn.com/en-in/news/world/why-archaeologists-don-t-want-to-open-china-s-2-200-year-old-emperor-qin-shi-huang-s-tomb-the-reason-will-shock-you/ar-AA1YsMpD#comments
+                            - button "Start the conversation" [ref=e814]:
+                              - img [ref=e815]
+                    - generic [ref=e817]:
+                      - button "Hide this story" [ref=e818]:
+                        - img [ref=e819]
+                        - text: Hide this story
+                      - button "See more" [ref=e820]:
+                        - img [ref=e821]
+                - article [ref=e822] [cursor=pointer]:
+                  - generic [ref=e828]:
+                    - generic [ref=e830]:
+                      - img "Watchlist suggestions" [ref=e832]
+                      - link "Watchlist suggestions" [ref=e833]:
+                        - /url: https://www.msn.com/en-in/money/watchlist?ocid=BingHp01
+                        - heading "Watchlist suggestions" [level=2] [ref=e834]
+                      - button "More options" [ref=e836]
+                    - generic [ref=e841]:
+                      - link "24K Gold (10 Grams) - Indian Rupee XAUINR ‎+0.69%‎ 144496" [ref=e843]:
+                        - /url: https://www.msn.com/en-in/money/watchlist?id=cejq77&ocid=BingHp01
+                        - generic [ref=e844]:
+                          - generic [ref=e846]: 24K Gold (10 Grams) - Indian Rupee
+                          - generic [ref=e848]: XAUINR
+                        - generic [ref=e853]:
+                          - generic [ref=e854]: ‎+0.69%‎
+                          - generic [ref=e855]: "144496"
+                        - button "Add to watchlist" [ref=e858]:
+                          - img [ref=e859]
+                      - link "Silver Silver Rising fast ‎+2.12%‎ 62.36" [ref=e863]:
+                        - /url: https://www.msn.com/en-in/money/watchlist?id=auvwr7&noti=Price&ocid=BingHp01
+                        - generic [ref=e864]:
+                          - generic [ref=e865]:
+                            - generic [ref=e866]: Silver
+                            - img "Silver" [ref=e867]
+                          - generic [ref=e869]: Rising fast
+                        - generic [ref=e874]:
+                          - generic [ref=e875]: ‎+2.12%‎
+                          - generic [ref=e876]: "62.36"
+                        - button "Add to watchlist" [ref=e879]:
+                          - img [ref=e880]
+                      - link "Dominion Energy Inc D ‎+2.89%‎ 69.75" [ref=e884]:
+                        - /url: https://www.msn.com/en-in/money/watchlist?id=a1qpw7&ocid=BingHp01
+                        - generic [ref=e885]:
+                          - generic [ref=e887]: Dominion Energy Inc
+                          - generic [ref=e889]: D
+                        - generic [ref=e894]:
+                          - generic [ref=e895]: ‎+2.89%‎
+                          - generic [ref=e896]: "69.75"
+                        - button "Add to watchlist" [ref=e899]:
+                          - img [ref=e900]
+                      - link "Reliance Industries Ltd RELIANCE ‎+1.35%‎ 1,321.60" [ref=e904]:
+                        - /url: https://www.msn.com/en-in/money/watchlist?id=ahjo52&ocid=BingHp01
+                        - generic [ref=e905]:
+                          - generic [ref=e907]: Reliance Industries Ltd
+                          - generic [ref=e909]: RELIANCE
+                        - generic [ref=e914]:
+                          - generic [ref=e915]: ‎+1.35%‎
+                          - generic [ref=e916]: 1,321.60
+                        - button "Add to watchlist" [ref=e919]:
+                          - img [ref=e920]
+                      - link "HDFC Bank Ltd HDFC Bank Ltd Rising fast ‎+3.68%‎ 830.55" [ref=e924]:
+                        - /url: https://www.msn.com/en-in/money/watchlist?id=ahi3jc&noti=Price&ocid=BingHp01
+                        - generic [ref=e925]:
+                          - generic [ref=e926]:
+                            - generic [ref=e927]: HDFC Bank Ltd
+                            - img "HDFC Bank Ltd" [ref=e928]
+                          - generic [ref=e930]: Rising fast
+                        - generic [ref=e935]:
+                          - generic [ref=e936]: ‎+3.68%‎
+                          - generic [ref=e937]: "830.55"
+                        - button "Add to watchlist" [ref=e940]:
+                          - img [ref=e941]
+                    - generic [ref=e945]:
+                      - generic [ref=e946]:
+                        - generic "Previous" [ref=e947]:
+                          - button "Previous" [ref=e948]
+                        - tablist [ref=e950]:
+                          - tab "tab-0" [selected] [ref=e951]
+                          - tab "tab-1" [ref=e953]
+                          - tab "tab-2" [ref=e955]
+                          - tab "tab-3" [ref=e957]
+                          - tab "tab-4" [ref=e959]
+                          - tab "tab-5"
+                          - tab "tab-6"
+                        - generic "Next" [ref=e961]:
+                          - button "Next" [ref=e962]
+                      - link "See watchlist suggestions" [ref=e964]:
+                        - /url: https://www.msn.com/en-in/money/watchlist?ocid=BingHp01
+              - generic [ref=e965]:
+                - article [ref=e966] [cursor=pointer]:
+                  - generic [ref=e971]:
+                    - generic [ref=e973]:
+                      - link "Top Engaging News" [ref=e975]:
+                        - /url: https://www.msn.com/en-in/channel/topic/Top Engaging News/tp-Y_42e62c1c-32a7-462e-a6b0-8a718bfe473d?ocid=BingHp01&cvid=3448086cbbc9472ac0047850aaceff09
+                        - heading "Top Engaging News" [level=2] [ref=e976]
+                      - button "More options" [ref=e978]
+                    - generic [ref=e980]:
+                      - 'link "NDTV World 7 Comments ''Need India''s help'': PoK leader''s cry for aid amid Pakistan''s brutalities" [ref=e982]':
+                        - /url: https://www.msn.com/en-in/money/news/need-india-s-help-pok-leader-s-cry-for-aid-amid-pakistan-s-brutalities/ar-AA27idcT
+                        - generic [ref=e983]:
+                          - img [ref=e984]
+                          - generic [ref=e985]: NDTV World
+                          - link "7 Comments" [ref=e987]:
+                            - /url: https://www.msn.com/en-in/money/news/need-india-s-help-pok-leader-s-cry-for-aid-amid-pakistan-s-brutalities/ar-AA27idcT#comments
+                            - img [ref=e988]
+                            - paragraph [ref=e989]: "7"
+                        - paragraph [ref=e990]: "'Need India's help': PoK leader's cry for aid amid Pakistan's brutalities"
+                      - link "Firstpost 8 Comments Netanyahu pushes back after Vance's 'only ally' remark, says '1.4 billion Indians support Israel'" [ref=e992]:
+                        - /url: https://www.msn.com/en-in/news/world/netanyahu-pushes-back-after-vance-s-only-ally-remark-says-1-4-billion-indians-support-israel/ar-AA27fWx2
+                        - generic [ref=e993]:
+                          - img [ref=e994]
+                          - generic [ref=e995]: Firstpost
+                          - link "8 Comments" [ref=e997]:
+                            - /url: https://www.msn.com/en-in/news/world/netanyahu-pushes-back-after-vance-s-only-ally-remark-says-1-4-billion-indians-support-israel/ar-AA27fWx2#comments
+                            - img [ref=e998]
+                            - paragraph [ref=e999]: "8"
+                        - paragraph [ref=e1000]: Netanyahu pushes back after Vance's 'only ally' remark, says '1.4 billion Indians support Israel'
+                      - link "The Times of India 6 Comments Aamir Khan sees off Raj Thackeray after wedding with Gauri Spratt; inside pictures capture newlyweds' special day" [ref=e1002]:
+                        - /url: https://www.msn.com/en-in/lifestyle/weddings/aamir-khan-sees-off-raj-thackeray-after-wedding-with-gauri-spratt-inside-pictures-capture-newlyweds-special-day/ar-AA27fCCZ
+                        - generic [ref=e1003]:
+                          - img [ref=e1004]
+                          - generic [ref=e1005]: The Times of India
+                          - link "6 Comments" [ref=e1007]:
+                            - /url: https://www.msn.com/en-in/lifestyle/weddings/aamir-khan-sees-off-raj-thackeray-after-wedding-with-gauri-spratt-inside-pictures-capture-newlyweds-special-day/ar-AA27fCCZ#comments
+                            - img [ref=e1008]
+                            - paragraph [ref=e1009]: "6"
+                        - paragraph [ref=e1010]: Aamir Khan sees off Raj Thackeray after wedding with Gauri Spratt; inside pictures capture newlyweds' special day
+                    - generic [ref=e1012]:
+                      - generic [ref=e1013]:
+                        - generic "Previous" [ref=e1014]:
+                          - button "Previous" [ref=e1015]
+                        - tablist [ref=e1017]:
+                          - tab "tab-0" [selected] [ref=e1018]
+                          - tab "tab-1" [ref=e1020]
+                          - tab "tab-2" [ref=e1022]
+                        - generic "Next" [ref=e1024]:
+                          - button "Next" [ref=e1025]
+                      - link "See more" [ref=e1027]:
+                        - /url: https://www.msn.com/en-in/channel/topic/Top Engaging News/tp-Y_42e62c1c-32a7-462e-a6b0-8a718bfe473d?ocid=BingHp01&cvid=3448086cbbc9472ac0047850aaceff09
+                - article [ref=e1028] [cursor=pointer]
+                - article "Delhi newlywed joined work, hosted party hours before murder, says family" [ref=e1035] [cursor=pointer]:
+                  - generic [ref=e1037]:
+                    - generic [ref=e1043]:
+                      - generic [ref=e1044]:
+                        - generic [ref=e1045]:
+                          - generic [ref=e1046]:
+                            - img [ref=e1047]
+                            - generic [ref=e1048]: NDTV 24x7
+                          - generic [ref=e1049]: ·
+                          - generic [ref=e1050]: 4h
+                        - link "Delhi newlywed joined work, hosted party hours before murder, says family, NDTV 24x7" [ref=e1051]:
+                          - /url: https://www.msn.com/en-in/video/news/delhi-newlywed-joined-work-hosted-party-hours-before-murder-says-family/vi-AA27ilx5
+                          - text: Delhi newlywed joined work, hosted party hours before murder, says family
+                      - generic "Delhi newlywed joined work, hosted party hours before murder, says family" [ref=e1055]:
+                        - generic [ref=e1057]:
+                          - generic [ref=e1058]:
+                            - button "7 Likes" [ref=e1059]:
+                              - generic [ref=e1060]:
+                                - img [ref=e1061]
+                                - generic [ref=e1063]: "7"
+                            - button "Dislike" [ref=e1064]:
+                              - img [ref=e1066]
+                          - link "Start the conversation" [ref=e1069]:
+                            - /url: https://www.msn.com/en-in/video/news/delhi-newlywed-joined-work-hosted-party-hours-before-murder-says-family/vi-AA27ilx5#comments
+                            - button "Start the conversation" [ref=e1070]:
+                              - img [ref=e1071]
+                    - generic [ref=e1073]:
+                      - button "Hide this story" [ref=e1074]:
+                        - img [ref=e1075]
+                        - text: Hide this story
+                      - button "See more" [ref=e1076]:
+                        - img [ref=e1077]
+                - article [ref=e1078] [cursor=pointer]:
+                  - generic [ref=e1084]:
+                    - generic [ref=e1086]:
+                      - link "Coimbatore South" [ref=e1088]:
+                        - /url: https://www.msn.com/en-in/weather/forecast/in-Coimbatore-South,Tamil-Nadu?loc=eyJsIjoiQ29pbWJhdG9yZSBTb3V0aCIsInIiOiJUYW1pbCBOYWR1IiwiYyI6IkluZGlhIiwiaSI6IklOIiwiZyI6ImVuLWluIiwieCI6NzYuOTM5OTg3MTgyNjE3MTksInkiOjExLjAwMDc1OTEyNDc1NTg2fQ%3D%3D&weadegreetype=C&ocid=BingHp01&cvid=3448086cbbc9472ac0047850aaceff09&content=Nowcast_wxncrb
+                        - heading "Coimbatore South" [level=2] [ref=e1089]
+                      - button "My location" [ref=e1090]
+                      - button "More options" [ref=e1092]
+                    - generic [ref=e1096]:
+                      - generic [ref=e1097]:
+                        - generic [ref=e1099]:
+                          - link "Mostly cloudy" [ref=e1100]:
+                            - /url: https://www.msn.com/en-in/weather/forecast/in-Coimbatore-South,Tamil-Nadu?loc=eyJsIjoiQ29pbWJhdG9yZSBTb3V0aCIsInIiOiJUYW1pbCBOYWR1IiwiYyI6IkluZGlhIiwiaSI6IklOIiwiZyI6ImVuLWluIiwieCI6NzYuOTM5OTg3MTgyNjE3MTksInkiOjExLjAwMDc1OTEyNDc1NTg2fQ%3D%3D&weadegreetype=C&ocid=BingHp01&cvid=3448086cbbc9472ac0047850aaceff09&content=Nowcast_wxncrb
+                            - img "Mostly cloudy" [ref=e1101]
+                          - link "31°C" [ref=e1102]:
+                            - /url: https://www.msn.com/en-in/weather/forecast/in-Coimbatore-South,Tamil-Nadu?loc=eyJsIjoiQ29pbWJhdG9yZSBTb3V0aCIsInIiOiJUYW1pbCBOYWR1IiwiYyI6IkluZGlhIiwiaSI6IklOIiwiZyI6ImVuLWluIiwieCI6NzYuOTM5OTg3MTgyNjE3MTksInkiOjExLjAwMDc1OTEyNDc1NTg2fQ%3D%3D&weadegreetype=C&ocid=BingHp01&cvid=3448086cbbc9472ac0047850aaceff09&content=Nowcast_wxncrb
+                            - generic [ref=e1103]: ‎31‎
+                            - generic [ref=e1105]: ‎°C‎
+                        - generic [ref=e1107]:
+                          - link "Rain starting soon" [ref=e1109]:
+                            - /url: https://www.msn.com/en-in/weather/maps/precipitation/in-Coimbatore-South,Tamil-Nadu?loc=eyJsIjoiQ29pbWJhdG9yZSBTb3V0aCIsInIiOiJUYW1pbCBOYWR1IiwiYyI6IkluZGlhIiwiaSI6IklOIiwiZyI6ImVuLWluIiwieCI6NzYuOTM5OTg3MTgyNjE3MTksInkiOjExLjAwMDc1OTEyNDc1NTg2fQ%3D%3D&weadegreetype=C&ocid=BingHp01&cvid=3448086cbbc9472ac0047850aaceff09&content=Nowcast_wxncrb
+                            - text: Rain starting soon
+                          - link "See full forecast" [ref=e1111]:
+                            - /url: https://www.msn.com/en-in/weather/maps/precipitation/in-Coimbatore-South,Tamil-Nadu?loc=eyJsIjoiQ29pbWJhdG9yZSBTb3V0aCIsInIiOiJUYW1pbCBOYWR1IiwiYyI6IkluZGlhIiwiaSI6IklOIiwiZyI6ImVuLWluIiwieCI6NzYuOTM5OTg3MTgyNjE3MTksInkiOjExLjAwMDc1OTEyNDc1NTg2fQ%3D%3D&weadegreetype=C&ocid=BingHp01&cvid=3448086cbbc9472ac0047850aaceff09&content=Nowcast_wxncrb
+                            - img "arrow" [ref=e1112]
+                      - list [ref=e1116]:
+                        - listitem [ref=e1117]:
+                          - generic "Weather forecast Today High temperature 31° Low temperature 24°" [ref=e1118]:
+                            - link "Weather forecast Today High temperature 31° Low temperature 24°" [ref=e1119]:
+                              - /url: https://www.msn.com/en-in/weather/forecast/in-Coimbatore-South,Tamil-Nadu?loc=eyJsIjoiQ29pbWJhdG9yZSBTb3V0aCIsInIiOiJUYW1pbCBOYWR1IiwiYyI6IkluZGlhIiwiaSI6IklOIiwiZyI6ImVuLWluIiwieCI6NzYuOTM5OTg3MTgyNjE3MTksInkiOjExLjAwMDc1OTEyNDc1NTg2fQ%3D%3D&weadegreetype=C&ocid=BingHp01&cvid=3448086cbbc9472ac0047850aaceff09&content=Nowcast_wxncrb&day=1
+                              - generic:
+                                - generic:
+                                  - generic "Today"
+                                  - generic:
+                                    - img "T-storms"
+                                  - generic:
+                                    - generic "High temperature 31°": ‎31°‎
+                                    - generic "Low temperature 24°": ‎24°‎
+                        - listitem [ref=e1120]:
+                          - generic "Weather forecast Tue High temperature 31° Low temperature 24°" [ref=e1121]:
+                            - link "Weather forecast Tue High temperature 31° Low temperature 24°" [ref=e1122]:
+                              - /url: https://www.msn.com/en-in/weather/forecast/in-Coimbatore-South,Tamil-Nadu?loc=eyJsIjoiQ29pbWJhdG9yZSBTb3V0aCIsInIiOiJUYW1pbCBOYWR1IiwiYyI6IkluZGlhIiwiaSI6IklOIiwiZyI6ImVuLWluIiwieCI6NzYuOTM5OTg3MTgyNjE3MTksInkiOjExLjAwMDc1OTEyNDc1NTg2fQ%3D%3D&weadegreetype=C&ocid=BingHp01&cvid=3448086cbbc9472ac0047850aaceff09&content=Nowcast_wxncrb&day=2
+                              - generic:
+                                - generic:
+                                  - generic "Tue"
+                                  - generic:
+                                    - img "Partly sunny"
+                                  - generic:
+                                    - generic "High temperature 31°": ‎31°‎
+                                    - generic "Low temperature 24°": ‎24°‎
+                        - listitem [ref=e1123]:
+                          - generic "Weather forecast Wed High temperature 31° Low temperature 24°" [ref=e1124]:
+                            - link "Weather forecast Wed High temperature 31° Low temperature 24°" [ref=e1125]:
+                              - /url: https://www.msn.com/en-in/weather/forecast/in-Coimbatore-South,Tamil-Nadu?loc=eyJsIjoiQ29pbWJhdG9yZSBTb3V0aCIsInIiOiJUYW1pbCBOYWR1IiwiYyI6IkluZGlhIiwiaSI6IklOIiwiZyI6ImVuLWluIiwieCI6NzYuOTM5OTg3MTgyNjE3MTksInkiOjExLjAwMDc1OTEyNDc1NTg2fQ%3D%3D&weadegreetype=C&ocid=BingHp01&cvid=3448086cbbc9472ac0047850aaceff09&content=Nowcast_wxncrb&day=3
+                              - generic:
+                                - generic:
+                                  - generic "Wed"
+                                  - generic:
+                                    - img "Partly sunny"
+                                  - generic:
+                                    - generic "High temperature 31°": ‎31°‎
+                                    - generic "Low temperature 24°": ‎24°‎
+                        - listitem [ref=e1126]:
+                          - generic "Weather forecast Thu High temperature 32° Low temperature 24°" [ref=e1127]:
+                            - link "Weather forecast Thu High temperature 32° Low temperature 24°" [ref=e1128]:
+                              - /url: https://www.msn.com/en-in/weather/forecast/in-Coimbatore-South,Tamil-Nadu?loc=eyJsIjoiQ29pbWJhdG9yZSBTb3V0aCIsInIiOiJUYW1pbCBOYWR1IiwiYyI6IkluZGlhIiwiaSI6IklOIiwiZyI6ImVuLWluIiwieCI6NzYuOTM5OTg3MTgyNjE3MTksInkiOjExLjAwMDc1OTEyNDc1NTg2fQ%3D%3D&weadegreetype=C&ocid=BingHp01&cvid=3448086cbbc9472ac0047850aaceff09&content=Nowcast_wxncrb&day=4
+                              - generic:
+                                - generic:
+                                  - generic "Thu"
+                                  - generic:
+                                    - img "Partly sunny"
+                                  - generic:
+                                    - generic "High temperature 32°": ‎32°‎
+                                    - generic "Low temperature 24°": ‎24°‎
+                        - listitem [ref=e1129]:
+                          - generic "Weather forecast Fri High temperature 32° Low temperature 24°" [ref=e1130]:
+                            - link "Weather forecast Fri High temperature 32° Low temperature 24°" [ref=e1131]:
+                              - /url: https://www.msn.com/en-in/weather/forecast/in-Coimbatore-South,Tamil-Nadu?loc=eyJsIjoiQ29pbWJhdG9yZSBTb3V0aCIsInIiOiJUYW1pbCBOYWR1IiwiYyI6IkluZGlhIiwiaSI6IklOIiwiZyI6ImVuLWluIiwieCI6NzYuOTM5OTg3MTgyNjE3MTksInkiOjExLjAwMDc1OTEyNDc1NTg2fQ%3D%3D&weadegreetype=C&ocid=BingHp01&cvid=3448086cbbc9472ac0047850aaceff09&content=Nowcast_wxncrb&day=5
+                              - generic:
+                                - generic:
+                                  - generic "Fri"
+                                  - generic:
+                                    - img "Mostly sunny"
+                                  - generic:
+                                    - generic "High temperature 32°": ‎32°‎
+                                    - generic "Low temperature 24°": ‎24°‎
+                    - button "See full forecast" [ref=e1134]
+                - 'article "EPF-2026 rules: Will your take-home salary increase under the new ₹1,800 PF contribution cap?" [ref=e1135] [cursor=pointer]':
+                  - generic [ref=e1137]:
+                    - img [ref=e1138]
+                    - generic [ref=e1139]:
+                      - generic [ref=e1140]:
+                        - generic [ref=e1141]:
+                          - generic [ref=e1142]:
+                            - img [ref=e1143]
+                            - generic [ref=e1144]: Live Mint
+                          - generic [ref=e1145]: ·
+                          - generic [ref=e1146]: 1d
+                        - 'link "EPF-2026 rules: Will your take-home salary increase under the new ₹1,800 PF contribution cap?, Live Mint" [ref=e1147]':
+                          - /url: https://www.msn.com/en-in/money/news/epf-2026-rules-will-your-take-home-salary-increase-under-the-new-1-800-pf-contribution-cap/ar-AA27egOl
+                          - text: "EPF-2026 rules: Will your take-home salary increase under the new ₹1,800 PF contribution cap?"
+                      - 'generic "EPF-2026 rules: Will your take-home salary increase under the new ₹1,800 PF contribution cap?" [ref=e1151]':
+                        - generic [ref=e1153]:
+                          - generic [ref=e1154]:
+                            - button "93 Likes" [ref=e1155]:
+                              - generic [ref=e1156]:
+                                - img [ref=e1157]
+                                - generic [ref=e1159]: "93"
+                            - button "Dislike" [ref=e1160]:
+                              - img [ref=e1162]
+                          - link "Start the conversation" [ref=e1165]:
+                            - /url: https://www.msn.com/en-in/money/news/epf-2026-rules-will-your-take-home-salary-increase-under-the-new-1-800-pf-contribution-cap/ar-AA27egOl#comments
+                            - button "Start the conversation" [ref=e1166]:
+                              - img [ref=e1167]
+                    - generic [ref=e1169]:
+                      - button "Hide this story" [ref=e1170]:
+                        - img [ref=e1171]
+                        - text: Hide this story
+                      - button "See more" [ref=e1172]:
+                        - img [ref=e1173]
+                - article "The most ridiculous celebrity takes of the week" [ref=e1174] [cursor=pointer]:
+                  - generic [ref=e1176]:
+                    - generic [ref=e1182]:
+                      - generic [ref=e1183]:
+                        - generic [ref=e1184]:
+                          - generic [ref=e1185]:
+                            - img [ref=e1186]
+                            - generic [ref=e1187]: Ben Shapiro
+                          - generic [ref=e1188]: ·
+                          - generic [ref=e1189]: 6d
+                        - link "The most ridiculous celebrity takes of the week, Ben Shapiro" [ref=e1190]:
+                          - /url: https://www.msn.com/en-in/entertainment/tv/the-most-ridiculous-celebrity-takes-of-the-week/vi-AA26Pot2
+                          - text: The most ridiculous celebrity takes of the week
+                      - generic "The most ridiculous celebrity takes of the week" [ref=e1194]:
+                        - generic [ref=e1196]:
+                          - generic [ref=e1197]:
+                            - button "1 Like" [ref=e1198]:
+                              - generic [ref=e1199]:
+                                - img [ref=e1200]
+                                - generic [ref=e1202]: "1"
+                            - button "Dislike" [ref=e1203]:
+                              - img [ref=e1205]
+                          - link "Start the conversation" [ref=e1208]:
+                            - /url: https://www.msn.com/en-in/entertainment/tv/the-most-ridiculous-celebrity-takes-of-the-week/vi-AA26Pot2#comments
+                            - button "Start the conversation" [ref=e1209]:
+                              - img [ref=e1210]
+                    - generic [ref=e1212]:
+                      - button "Hide this story" [ref=e1213]:
+                        - img [ref=e1214]
+                        - text: Hide this story
+                      - button "See more" [ref=e1215]:
+                        - img [ref=e1216]
+                - article [ref=e1217] [cursor=pointer]
+                - article [ref=e1224] [cursor=pointer]:
+                  - generic [ref=e1229]:
+                    - generic [ref=e1231]:
+                      - link "Games" [ref=e1233]:
+                        - /url: https://www.msn.com/en-in/play?ocid=msedgntp&cgfrom=cg_ntp_sd_cardtitle
+                        - heading "Games" [level=2] [ref=e1234]
+                      - button "More options" [ref=e1236]
+                    - list [ref=e1240]:
+                      - generic:
+                        - listitem [ref=e1241]:
+                          - link "Cubes2048" [ref=e1242]:
+                            - /url: https://www.msn.com/en-in/play/games/cubes2048/cg-9mvd9sprhm6x?cgfrom=cg_ntp_sd_cardgameitem&ocid=BingHp01&cvid=3448086cbbc9472ac0047850aaceff09&ei=5
+                            - generic [ref=e1243]:
+                              - img "Cubes2048"
+                        - listitem [ref=e1244]:
+                          - link "Zuno" [ref=e1245]:
+                            - /url: https://www.msn.com/en-in/play/games/zuno/cg-9pff1rr68z1q?cgfrom=cg_ntp_sd_cardgameitem&ocid=BingHp01&cvid=3448086cbbc9472ac0047850aaceff09&ei=5
+                            - generic [ref=e1246]:
+                              - img "Zuno"
+                        - listitem [ref=e1247]:
+                          - link "Racing Limits" [ref=e1248]:
+                            - /url: https://www.msn.com/en-in/play/games/racing-limits/cg-9n7hl5s06zk0?cgfrom=cg_ntp_sd_cardgameitem&ocid=BingHp01&cvid=3448086cbbc9472ac0047850aaceff09&ei=5
+                            - generic [ref=e1249]:
+                              - img "Racing Limits"
+                        - listitem [ref=e1250]:
+                          - link "bloxd.io" [ref=e1251]:
+                            - /url: https://www.msn.com/en-in/play/games/bloxdio/cg-9p0rj8ffrg7h?cgfrom=cg_ntp_sd_cardgameitem&ocid=BingHp01&cvid=3448086cbbc9472ac0047850aaceff09&ei=5
+                            - generic [ref=e1252]:
+                              - img "bloxd.io"
+                        - listitem [ref=e1253]:
+                          - link "Veck.io" [ref=e1254]:
+                            - /url: https://www.msn.com/en-in/play/games/veckio/cg-9mz3sdptqwm2?cgfrom=cg_ntp_sd_cardgameitem&ocid=BingHp01&cvid=3448086cbbc9472ac0047850aaceff09&ei=5
+                            - generic [ref=e1255]:
+                              - img "Veck.io"
+                        - listitem [ref=e1256]:
+                          - link "MR RACER - Car Racing" [ref=e1257]:
+                            - /url: https://www.msn.com/en-in/play/games/mr-racer--car-racing/cg-9n08dpggwvqh?cgfrom=cg_ntp_sd_cardgameitem&ocid=BingHp01&cvid=3448086cbbc9472ac0047850aaceff09&ei=5
+                            - generic [ref=e1258]:
+                              - img "MR RACER - Car Racing"
+                        - listitem [ref=e1259]:
+                          - 'link "Hazmob FPS: Online Shooter" [ref=e1260]':
+                            - /url: https://www.msn.com/en-in/play/games/hazmob-fps-online-shooter/cg-9n7qs1kn0v8l?cgfrom=cg_ntp_sd_cardgameitem&ocid=BingHp01&cvid=3448086cbbc9472ac0047850aaceff09&ei=5
+                            - generic [ref=e1261]:
+                              - 'img "Hazmob FPS: Online Shooter"'
+                        - listitem [ref=e1262]:
+                          - link "Cat and Granny" [ref=e1263]:
+                            - /url: https://www.msn.com/en-in/play/games/cat-and-granny/cg-9nvw3pnt193n?cgfrom=cg_ntp_sd_cardgameitem&ocid=BingHp01&cvid=3448086cbbc9472ac0047850aaceff09&ei=5
+                            - generic [ref=e1264]:
+                              - img "Cat and Granny"
+                        - listitem [ref=e1265]:
+                          - link "Cars Merge" [ref=e1266]:
+                            - /url: https://www.msn.com/en-in/play/games/cars-merge/cg-9n022gfn8gsb?cgfrom=cg_ntp_sd_cardgameitem&ocid=BingHp01&cvid=3448086cbbc9472ac0047850aaceff09&ei=5
+                            - generic [ref=e1267]:
+                              - img "Cars Merge"
+                    - generic [ref=e1269]:
+                      - generic [ref=e1270]:
+                        - generic "Previous" [ref=e1271]:
+                          - button "Previous" [ref=e1272]
+                        - tablist [ref=e1274]:
+                          - tab "tab-0" [selected] [ref=e1275]
+                          - tab "tab-1" [ref=e1277]
+                        - generic "Next" [ref=e1279]:
+                          - button "Next" [ref=e1280]
+                      - link "Explore more games" [ref=e1282]:
+                        - /url: https://www.msn.com/en-in/play?ocid=msedgntp&cgfrom=cg_ntp_sd_cardseemore
+                - 'article "Breaking news: Heavy rain cuts off Mumbai–Pune road and rail connectivity" [ref=e1283] [cursor=pointer]':
+                  - generic [ref=e1285]:
+                    - img [ref=e1286]
+                    - generic [ref=e1287]:
+                      - generic [ref=e1288]:
+                        - generic [ref=e1289]:
+                          - generic [ref=e1290]:
+                            - img [ref=e1291]
+                            - generic [ref=e1292]: ABP - Live
+                          - generic [ref=e1293]: ·
+                          - generic [ref=e1294]: 6h
+                        - 'link "Breaking news: Heavy rain cuts off Mumbai–Pune road and rail connectivity, ABP - Live" [ref=e1295]':
+                          - /url: https://www.msn.com/en-in/news/india/breaking-news-heavy-rain-cuts-off-mumbai-pune-road-and-rail-connectivity/ar-AA27i2Xf
+                          - text: "Breaking news: Heavy rain cuts off Mumbai–Pune road and rail connectivity"
+                      - 'generic "Breaking news: Heavy rain cuts off Mumbai–Pune road and rail connectivity" [ref=e1299]':
+                        - generic [ref=e1301]:
+                          - generic [ref=e1302]:
+                            - button "38 Likes" [ref=e1303]:
+                              - generic [ref=e1304]:
+                                - img [ref=e1305]
+                                - generic [ref=e1307]: "38"
+                            - button "Dislike" [ref=e1308]:
+                              - img [ref=e1310]
+                          - link "Start the conversation" [ref=e1313]:
+                            - /url: https://www.msn.com/en-in/news/india/breaking-news-heavy-rain-cuts-off-mumbai-pune-road-and-rail-connectivity/ar-AA27i2Xf#comments
+                            - button "Start the conversation" [ref=e1314]:
+                              - img [ref=e1315]
+                    - generic [ref=e1317]:
+                      - button "Hide this story" [ref=e1318]:
+                        - img [ref=e1319]
+                        - text: Hide this story
+                      - button "See more" [ref=e1320]:
+                        - img [ref=e1321]
+                - 'article "Our daughter is not a defective toy: They were told to replace her and what her parents did will remain an example forever" [ref=e1322] [cursor=pointer]':
+                  - generic [ref=e1324]:
+                    - img [ref=e1325]
+                    - generic [ref=e1326]:
+                      - generic [ref=e1327]:
+                        - generic [ref=e1328]:
+                          - generic [ref=e1329]:
+                            - img [ref=e1330]
+                            - generic [ref=e1331]: The Times of India
+                          - generic [ref=e1332]: ·
+                          - generic [ref=e1333]: 6d
+                        - 'link "Our daughter is not a defective toy: They were told to replace her and what her parents did will remain an example forever, The Times of India" [ref=e1334]':
+                          - /url: https://www.msn.com/en-in/health/health-news/our-daughter-is-not-a-defective-toy-they-were-told-to-replace-her-and-what-her-parents-did-will-remain-an-example-forever/ar-AA26OaNd
+                          - text: "Our daughter is not a defective toy: They were told to replace her and what her parents did will remain an example forever"
+                      - 'generic "Our daughter is not a defective toy: They were told to replace her and what her parents did will remain an example forever" [ref=e1338]':
+                        - generic [ref=e1340]:
+                          - generic [ref=e1341]:
+                            - button "188 Likes" [ref=e1342]:
+                              - generic [ref=e1343]:
+                                - img [ref=e1344]
+                                - generic [ref=e1346]: "188"
+                            - button "Dislike" [ref=e1347]:
+                              - img [ref=e1349]
+                          - link "View comments 2 Comment" [ref=e1352]:
+                            - /url: https://www.msn.com/en-in/health/health-news/our-daughter-is-not-a-defective-toy-they-were-told-to-replace-her-and-what-her-parents-did-will-remain-an-example-forever/ar-AA26OaNd#comments
+                            - button "View comments 2 Comment" [ref=e1353]:
+                              - img [ref=e1354]
+                            - generic [ref=e1356]: "2"
+                    - generic [ref=e1357]:
+                      - button "Hide this story" [ref=e1358]:
+                        - img [ref=e1359]
+                        - text: Hide this story
+                      - button "See more" [ref=e1360]:
+                        - img [ref=e1361]
+                - 'article "Gold rate today (July 6, 2026): Check 24K, 22K, 18K prices in Delhi, Mumbai, Kolkata, Chennai, Lucknow and other major cities" [ref=e1362] [cursor=pointer]':
+                  - generic [ref=e1364]:
+                    - img [ref=e1365]
+                    - generic [ref=e1366]:
+                      - generic [ref=e1367]:
+                        - generic [ref=e1368]:
+                          - generic [ref=e1369]:
+                            - img [ref=e1370]
+                            - generic [ref=e1371]: Times Now
+                          - generic [ref=e1372]: ·
+                          - generic [ref=e1373]: 5h
+                        - 'link "Gold rate today (July 6, 2026): Check 24K, 22K, 18K prices in Delhi, Mumbai, Kolkata, Chennai, Lucknow and other major cities, Times Now" [ref=e1374]':
+                          - /url: https://www.msn.com/en-in/news/india/gold-rate-today-july-6-2026-check-24k-22k-18k-prices-in-delhi-mumbai-kolkata-chennai-lucknow-and-other-major-cities/ar-AA27i0DJ
+                          - text: "Gold rate today (July 6, 2026): Check 24K, 22K, 18K prices in Delhi, Mumbai, Kolkata, Chennai, Lucknow and other major cities"
+                      - 'generic "Gold rate today (July 6, 2026): Check 24K, 22K, 18K prices in Delhi, Mumbai, Kolkata, Chennai, Lucknow and other major cities" [ref=e1378]':
+                        - generic [ref=e1380]:
+                          - generic [ref=e1381]:
+                            - button "35 Likes" [ref=e1382]:
+                              - generic [ref=e1383]:
+                                - img [ref=e1384]
+                                - generic [ref=e1386]: "35"
+                            - button "Dislike" [ref=e1387]:
+                              - img [ref=e1389]
+                          - link "Start the conversation" [ref=e1392]:
+                            - /url: https://www.msn.com/en-in/news/india/gold-rate-today-july-6-2026-check-24k-22k-18k-prices-in-delhi-mumbai-kolkata-chennai-lucknow-and-other-major-cities/ar-AA27i0DJ#comments
+                            - button "Start the conversation" [ref=e1393]:
+                              - img [ref=e1394]
+                    - generic [ref=e1396]:
+                      - button "Hide this story" [ref=e1397]:
+                        - img [ref=e1398]
+                        - text: Hide this story
+                      - button "See more" [ref=e1399]:
+                        - img [ref=e1400]
+                - 'article "''It absolutely stinks'': Football world erupts over Donald Trump''s role in FIFA''s Balogun red-card U-turn" [ref=e1401] [cursor=pointer]':
+                  - generic [ref=e1403]:
+                    - img [ref=e1404]
+                    - generic [ref=e1405]:
+                      - generic [ref=e1406]:
+                        - generic [ref=e1407]:
+                          - generic [ref=e1408]:
+                            - img [ref=e1409]
+                            - generic [ref=e1410]: The Times of India
+                          - generic [ref=e1411]: ·
+                          - generic [ref=e1412]: 3h
+                        - 'link "''It absolutely stinks'': Football world erupts over Donald Trump''s role in FIFA''s Balogun red-card U-turn, The Times of India" [ref=e1413]':
+                          - /url: https://www.msn.com/en-in/news/world/it-absolutely-stinks-football-world-erupts-over-donald-trump-s-role-in-fifa-s-balogun-red-card-u-turn/ar-AA27i1Pz
+                          - text: "'It absolutely stinks': Football world erupts over Donald Trump's role in FIFA's Balogun red-card U-turn"
+                      - 'generic "''It absolutely stinks'': Football world erupts over Donald Trump''s role in FIFA''s Balogun red-card U-turn" [ref=e1417]':
+                        - generic [ref=e1419]:
+                          - generic [ref=e1420]:
+                            - button "8 Likes" [ref=e1421]:
+                              - generic [ref=e1422]:
+                                - img [ref=e1423]
+                                - generic [ref=e1425]: "8"
+                            - button "Dislike" [ref=e1426]:
+                              - img [ref=e1428]
+                          - link "View comments 2 Comment" [ref=e1431]:
+                            - /url: https://www.msn.com/en-in/news/world/it-absolutely-stinks-football-world-erupts-over-donald-trump-s-role-in-fifa-s-balogun-red-card-u-turn/ar-AA27i1Pz#comments
+                            - button "View comments 2 Comment" [ref=e1432]:
+                              - img [ref=e1433]
+                            - generic [ref=e1435]: "2"
+                    - generic [ref=e1436]:
+                      - button "Hide this story" [ref=e1437]:
+                        - img [ref=e1438]
+                        - text: Hide this story
+                      - button "See more" [ref=e1439]:
+                        - img [ref=e1440]
+              - generic [ref=e1441]:
+                - article "An asteroid exploded over Russia - and we never saw it coming" [ref=e1442] [cursor=pointer]:
+                  - generic [ref=e1444]:
+                    - generic [ref=e1450]:
+                      - generic [ref=e1451]:
+                        - generic [ref=e1452]:
+                          - generic [ref=e1453]:
+                            - img [ref=e1454]
+                            - generic [ref=e1455]: Veritasium
+                          - generic [ref=e1456]: ·
+                          - generic [ref=e1457]: 1w
+                        - link "An asteroid exploded over Russia - and we never saw it coming, Veritasium" [ref=e1458]:
+                          - /url: https://www.msn.com/en-in/news/world/an-asteroid-exploded-over-russia-and-we-never-saw-it-coming/vi-AA20kKzm
+                          - text: An asteroid exploded over Russia - and we never saw it coming
+                      - generic "An asteroid exploded over Russia - and we never saw it coming" [ref=e1462]:
+                        - generic [ref=e1464]:
+                          - generic [ref=e1465]:
+                            - button "745 Likes" [ref=e1466]:
+                              - generic [ref=e1467]:
+                                - img [ref=e1468]
+                                - generic [ref=e1470]: "745"
+                            - button "Dislike" [ref=e1471]:
+                              - img [ref=e1473]
+                          - link "View comments 1 Comment" [ref=e1476]:
+                            - /url: https://www.msn.com/en-in/news/world/an-asteroid-exploded-over-russia-and-we-never-saw-it-coming/vi-AA20kKzm#comments
+                            - button "View comments 1 Comment" [ref=e1477]:
+                              - img [ref=e1478]
+                            - generic [ref=e1480]: "1"
+                    - generic [ref=e1481]:
+                      - button "Hide this story" [ref=e1482]:
+                        - img [ref=e1483]
+                        - text: Hide this story
+                      - button "See more" [ref=e1484]:
+                        - img [ref=e1485]
+                - article "Retired Lt Gen criticised for 'many more to come' remark on Aamir Khan's marriage" [ref=e1486] [cursor=pointer]:
+                  - generic [ref=e1488]:
+                    - img [ref=e1489]
+                    - generic [ref=e1490]:
+                      - generic [ref=e1491]:
+                        - generic [ref=e1492]:
+                          - generic [ref=e1493]:
+                            - img [ref=e1494]
+                            - generic [ref=e1495]: India Today
+                          - generic [ref=e1496]: ·
+                          - generic [ref=e1497]: 3h
+                        - link "Retired Lt Gen criticised for 'many more to come' remark on Aamir Khan's marriage, India Today" [ref=e1498]:
+                          - /url: https://www.msn.com/en-in/entertainment/bollywood/retired-lt-gen-criticised-for-many-more-to-come-remark-on-aamir-khan-s-marriage/ar-AA27iygg
+                          - text: Retired Lt Gen criticised for 'many more to come' remark on Aamir Khan's marriage
+                      - generic "Retired Lt Gen criticised for 'many more to come' remark on Aamir Khan's marriage" [ref=e1502]:
+                        - generic [ref=e1504]:
+                          - generic [ref=e1505]:
+                            - button "34 Likes" [ref=e1506]:
+                              - generic [ref=e1507]:
+                                - img [ref=e1508]
+                                - generic [ref=e1510]: "34"
+                            - button "Dislike" [ref=e1511]:
+                              - img [ref=e1513]
+                          - link "View comments 7 Comment" [ref=e1516]:
+                            - /url: https://www.msn.com/en-in/entertainment/bollywood/retired-lt-gen-criticised-for-many-more-to-come-remark-on-aamir-khan-s-marriage/ar-AA27iygg#comments
+                            - button "View comments 7 Comment" [ref=e1517]:
+                              - img [ref=e1518]
+                            - generic [ref=e1520]: "7"
+                    - generic [ref=e1521]:
+                      - button "Hide this story" [ref=e1522]:
+                        - img [ref=e1523]
+                        - text: Hide this story
+                      - button "See more" [ref=e1524]:
+                        - img [ref=e1525]
+                - 'article "''Does anyone ask Shah Rukh Khan about me?'': Suchitra Krishnamoorthi slams repeated and ''so boring'' questions on her ''Kabhi Haan Kabhi Naa'' co-star" [ref=e1526] [cursor=pointer]':
+                  - generic [ref=e1528]:
+                    - img [ref=e1529]
+                    - generic [ref=e1530]:
+                      - generic [ref=e1531]:
+                        - generic [ref=e1532]:
+                          - generic [ref=e1533]:
+                            - img [ref=e1534]
+                            - generic [ref=e1535]: The Times of India
+                          - generic [ref=e1536]: ·
+                          - generic [ref=e1537]: 2d
+                        - 'link "''Does anyone ask Shah Rukh Khan about me?'': Suchitra Krishnamoorthi slams repeated and ''so boring'' questions on her ''Kabhi Haan Kabhi Naa'' co-star, The Times of India" [ref=e1538]':
+                          - /url: https://www.msn.com/en-in/entertainment/bollywood/does-anyone-ask-shah-rukh-khan-about-me-suchitra-krishnamoorthi-slams-repeated-and-so-boring-questions-on-her-kabhi-haan-kabhi-naa-co-star/ar-AA27buDV
+                          - text: "'Does anyone ask Shah Rukh Khan about me?': Suchitra Krishnamoorthi slams repeated and 'so boring' questions on her 'Kabhi Haan Kabhi Naa' co-star"
+                      - 'generic "''Does anyone ask Shah Rukh Khan about me?'': Suchitra Krishnamoorthi slams repeated and ''so boring'' questions on her ''Kabhi Haan Kabhi Naa'' co-star" [ref=e1542]':
+                        - generic [ref=e1544]:
+                          - generic [ref=e1545]:
+                            - button "21 Likes" [ref=e1546]:
+                              - generic [ref=e1547]:
+                                - img [ref=e1548]
+                                - generic [ref=e1550]: "21"
+                            - button "Dislike" [ref=e1551]:
+                              - img [ref=e1553]
+                          - link "Start the conversation" [ref=e1556]:
+                            - /url: https://www.msn.com/en-in/entertainment/bollywood/does-anyone-ask-shah-rukh-khan-about-me-suchitra-krishnamoorthi-slams-repeated-and-so-boring-questions-on-her-kabhi-haan-kabhi-naa-co-star/ar-AA27buDV#comments
+                            - button "Start the conversation" [ref=e1557]:
+                              - img [ref=e1558]
+                    - generic [ref=e1560]:
+                      - button "Hide this story" [ref=e1561]:
+                        - img [ref=e1562]
+                        - text: Hide this story
+                      - button "See more" [ref=e1563]:
+                        - img [ref=e1564]
+                - article "First time in 53 years! England women's cricket team lose a World Cup at home" [ref=e1565] [cursor=pointer]:
+                  - generic [ref=e1567]:
+                    - img [ref=e1568]
+                    - generic [ref=e1569]:
+                      - generic [ref=e1570]:
+                        - generic [ref=e1571]:
+                          - generic [ref=e1572]:
+                            - img [ref=e1573]
+                            - generic [ref=e1574]: News18
+                          - generic [ref=e1575]: ·
+                          - generic [ref=e1576]: 14h
+                        - link "First time in 53 years! England women's cricket team lose a World Cup at home, News18" [ref=e1577]:
+                          - /url: https://www.msn.com/en-in/sports/cricket/first-time-in-53-years-england-women-s-cricket-team-lose-a-world-cup-at-home/ar-AA27g3Ux
+                          - text: First time in 53 years! England women's cricket team lose a World Cup at home
+                      - generic "First time in 53 years! England women's cricket team lose a World Cup at home" [ref=e1581]:
+                        - generic [ref=e1583]:
+                          - generic [ref=e1584]:
+                            - button "23 Likes" [ref=e1585]:
+                              - generic [ref=e1586]:
+                                - img [ref=e1587]
+                                - generic [ref=e1589]: "23"
+                            - button "Dislike" [ref=e1590]:
+                              - img [ref=e1592]
+                          - link "Start the conversation" [ref=e1595]:
+                            - /url: https://www.msn.com/en-in/sports/cricket/first-time-in-53-years-england-women-s-cricket-team-lose-a-world-cup-at-home/ar-AA27g3Ux#comments
+                            - button "Start the conversation" [ref=e1596]:
+                              - img [ref=e1597]
+                    - generic [ref=e1599]:
+                      - button "Hide this story" [ref=e1600]:
+                        - img [ref=e1601]
+                        - text: Hide this story
+                      - button "See more" [ref=e1602]:
+                        - img [ref=e1603]
+    - contentinfo:
+      - generic [ref=e1605]:
+        - generic [ref=e1606]: © 2026 Microsoft
+        - list [ref=e1607]:
+          - listitem [ref=e1608]:
+            - link "Privacy and Cookies" [ref=e1609]:
+              - /url: //go.microsoft.com/fwlink/?LinkId=521839
+          - listitem [ref=e1610]:
+            - link "Legal" [ref=e1611]:
+              - /url: //go.microsoft.com/fwlink/?LinkID=246338
+          - listitem [ref=e1612]:
+            - link "Advertise" [ref=e1613]:
+              - /url: //go.microsoft.com/fwlink/?linkid=868923
+          - listitem [ref=e1614]:
+            - link "About our ads" [ref=e1615]:
+              - /url: //go.microsoft.com/fwlink/?LinkID=286759
+          - listitem [ref=e1616]:
+            - link "Help" [ref=e1617]:
+              - /url: //support.microsoft.com/topic/82d20721-2d6f-4012-a13d-d1910ccf203f
+          - listitem [ref=e1618]:
+            - link "Feedback" [ref=e1619]:
+              - /url: "#"
+```
+
+# Test source
+
+```ts
+  1  | import {test,expect} from '@playwright/test'
+  2  | test('Bing web Test',async({page})=>{
+  3  |     await page.goto("https://www.bing.com/" );
+  4  |     const title = await page.title();
+  5  |     const url=page.url();
+  6  |     console.log("Title:",title);
+  7  |     console.log("Url:",url);
+  8  |     await expect (page).toHaveTitle(title);
+  9  |     await expect (page).toHaveURL(url);
+  10 |     const text = await page.getByRole("link", { name: "Images" }).innerText();
+  11 |     console.log("Inner Text: "+text);
+  12 |     const placeholdertext = await page.locator("#sb_form_q").getAttribute("placeholder");
+  13 |     console.log("Placeholder:", placeholdertext);
+  14 |     await page.fill("#sb_form_q", "playwright");
+  15 |     await page.keyboard.press("Enter");
+> 16 |     await page.locator("//li[@class='b_algo']//h2/a").first().click();
+     |                                                               ^ Error: locator.click: Test timeout of 60000ms exceeded.
+  17 |     await expect(page).toHaveTitle(/Playwright/i);
+  18 | 
+  19 |     
+  20 | });
+  21 | 
+```

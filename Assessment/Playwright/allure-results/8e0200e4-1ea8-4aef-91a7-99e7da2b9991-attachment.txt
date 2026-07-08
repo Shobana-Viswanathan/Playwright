@@ -1,0 +1,4 @@
+Title: Search - Microsoft Bing
+Url: https://www.bing.com/
+Inner Text: Images
+Placeholder: Search the web

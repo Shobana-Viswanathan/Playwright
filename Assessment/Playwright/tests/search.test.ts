@@ -8,15 +8,10 @@ test.describe('Product @smoke',()=>{
     test('Product search', async ({ searchPage }) => {
    
     await searchPage.searchpro(searchData.search.product);
-
     const productList = await searchPage.getProducts();
-
     console.log(productList);
-
     const count = await searchPage.getProductCount();
-
     expect(count).toBeGreaterThan(0);
-
     expect(productList).toContain(searchData.search.product);
 });
 });

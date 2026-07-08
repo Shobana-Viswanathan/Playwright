@@ -196,3 +196,48 @@
 [2026-07-06T05:47:08.609Z] INFO-Scenario Passed:Search different products
 [2026-07-06T05:47:10.660Z] INFO-Scenario Passed:Search non-existing product
 [2026-07-06T05:47:10.682Z] INFO-Browser Closed
+[2026-07-06T07:15:45.755Z] INFO-Browser Launched
+[2026-07-06T07:15:52.985Z] INFO-Scenario Passed:Valid login to the application
+[2026-07-06T07:15:55.473Z] INFO-Scenario Passed:Invalid login to the application
+[2026-07-06T07:15:58.083Z] INFO-Scenario Passed:Login using data table
+[2026-07-06T07:16:01.255Z] INFO-Scenario Passed:User register to application
+[2026-07-06T07:16:02.801Z] INFO-Scenario Passed:Search different products
+[2026-07-06T07:16:04.512Z] INFO-Scenario Passed:Search different products
+[2026-07-06T07:16:06.092Z] INFO-Scenario Passed:Search non-existing product
+[2026-07-06T07:16:06.118Z] INFO-Browser Closed
+[2026-07-06T07:36:16.261Z] INFO-Browser Launched
+[2026-07-06T07:36:51.853Z] ERROR-Scenario Failed: Valid login to the application
+[2026-07-06T07:36:51.854Z] ERROR-Screenshot Saved:reports/screenshots/1783323411758.png
+[2026-07-06T07:36:54.784Z] INFO-Scenario Passed:Invalid login to the application
+[2026-07-06T07:37:10.111Z] INFO-Browser Closed
+[2026-07-06T07:37:26.870Z] INFO-Browser Launched
+[2026-07-06T07:37:59.623Z] ERROR-Scenario Failed: Valid login to the application
+[2026-07-06T07:37:59.624Z] ERROR-Screenshot Saved:reports/screenshots/1783323479537.png
+[2026-07-06T07:38:01.612Z] INFO-Scenario Passed:Invalid login to the application
+[2026-07-06T07:38:33.267Z] ERROR-Scenario Failed: Login using data table
+[2026-07-06T07:38:33.268Z] ERROR-Screenshot Saved:reports/screenshots/1783323513184.png
+[2026-07-06T07:38:36.398Z] INFO-Scenario Passed:User register to application
+[2026-07-06T07:38:38.326Z] INFO-Scenario Passed:Search different products
+[2026-07-06T07:38:40.124Z] INFO-Scenario Passed:Search different products
+[2026-07-06T07:38:42.028Z] INFO-Scenario Passed:Search non-existing product
+[2026-07-06T07:38:42.061Z] INFO-Browser Closed
+[2026-07-06T07:42:32.578Z] INFO-Browser Launched
+[2026-07-06T07:43:05.192Z] ERROR-Scenario Failed: Valid login to the application
+[2026-07-06T07:43:05.192Z] ERROR-Screenshot Saved:reports/screenshots/1783323785104.png
+[2026-07-06T07:43:06.829Z] INFO-Scenario Passed:Invalid login to the application
+[2026-07-06T07:43:38.811Z] ERROR-Scenario Failed: Login using data table
+[2026-07-06T07:43:38.811Z] ERROR-Screenshot Saved:reports/screenshots/1783323818717.png
+[2026-07-06T07:43:41.332Z] INFO-Scenario Passed:User register to application
+[2026-07-06T07:43:42.844Z] INFO-Scenario Passed:Search different products
+[2026-07-06T07:43:44.371Z] INFO-Scenario Passed:Search different products
+[2026-07-06T07:43:45.842Z] INFO-Scenario Passed:Search non-existing product
+[2026-07-06T07:43:45.864Z] INFO-Browser Closed
+[2026-07-06T07:45:05.032Z] INFO-Browser Launched
+[2026-07-06T07:45:09.544Z] INFO-Scenario Passed:Valid login to the application
+[2026-07-06T07:45:13.843Z] INFO-Scenario Passed:Invalid login to the application
+[2026-07-06T07:45:19.354Z] INFO-Scenario Passed:Login using data table
+[2026-07-06T07:45:23.397Z] INFO-Scenario Passed:User register to application
+[2026-07-06T07:45:25.244Z] INFO-Scenario Passed:Search different products
+[2026-07-06T07:45:26.770Z] INFO-Scenario Passed:Search different products
+[2026-07-06T07:45:28.263Z] INFO-Scenario Passed:Search non-existing product
+[2026-07-06T07:45:28.287Z] INFO-Browser Closed

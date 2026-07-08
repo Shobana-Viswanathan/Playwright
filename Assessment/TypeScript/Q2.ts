@@ -13,5 +13,11 @@ function reverseNumber(num:number){
 }
 
  let input = Number(prompt("Enter five digit number : "));
- let result = reverseNumber(input);
- console.log("Reversed Number: ",result);
+ if (input >= 10000 && input <= 99999) {
+    let result = reverseNumber(input);
+    console.log("Reversed Number:", result);
+   } 
+   else {
+    console.log("Enter a valid five-digit number.");
+}
+ 
